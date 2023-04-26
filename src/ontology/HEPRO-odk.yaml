@@ -16,4 +16,8 @@ import_group:
     - id: NOYO
       module_type: mirror
       mirror_from: "https://raw.githubusercontent.com/OpenLHS/NOYO/main/NOYO-full.owl"
+robot_report:
+  custom_sparql_exports:
+    - base-classes-report
+    - base-properties-report
 robot_java_args: "-Xmx8G"

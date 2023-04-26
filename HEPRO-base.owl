@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,8 +11,12 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-04-26/HEPRO-base.owl"/>
+        <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
+        <dc:contributor xml:lang="en">François Goyer</dc:contributor>
+        <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
+        <dc:contributor xml:lang="en">Paul Fabry</dc:contributor>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:description>None</terms:description>
+        <terms:description xml:lang="en">Ontology of health procedure related entities</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <terms:title>HEalth PRocedure Ontology</terms:title>
         <owl:versionInfo>2023-04-26</owl:versionInfo>
@@ -27,6 +32,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -63,6 +80,47 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002018"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353"/>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000008 -->
+
+    <owl:ObjectProperty rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000008"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -71,11 +129,143 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HEPRO_0000000 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/HEPRO_0000001 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/HEPRO_0000001">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">A request specifying the execution of some health procedures.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health procedure request</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/HEPRO_0000002 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/HEPRO_0000002">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health procedure order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/HEPRO_0000003 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/HEPRO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity containing information about some health procedure requests and possibly the associated health procedures.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health procedure report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/HEPRO_0000004 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/HEPRO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http:/purl.obolibrary.org/obo/NOYO_0000008"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/HEPRO_0000005 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/HEPRO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that aims to produce a truthful statement about the health status of an organism or modify it.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/HEPRO_0000006 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/HEPRO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health procedure resulting process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/HEPRO_0000007 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/HEPRO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health procedure outcome information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/HEPRO_0000008 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/HEPRO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002352"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a specified output of a health activity.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">health activity outcome information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http:/purl.obolibrary.org/obo/NOYO_0000001 -->
+
+    <owl:Class rdf:about="http:/purl.obolibrary.org/obo/NOYO_0000001"/>
 </rdf:RDF>
 
 

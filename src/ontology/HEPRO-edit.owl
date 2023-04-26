@@ -1,4 +1,3 @@
-
 Prefix(:=<http://purl.obolibrary.org/obo/HEPRO.owl#>)
 Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -10,36 +9,103 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HEPRO.owl>
-
 Import(<http://purl.obolibrary.org/obo/HEPRO/imports/NOYO_import.owl>)
-
-
-Annotation(dcterms:description "None")
+Annotation(dce:contributor "Adrien Barton"@en)
+Annotation(dce:contributor "François Goyer"@en)
+Annotation(dce:contributor "Jean-François Ethier"@en)
+Annotation(dce:contributor "Paul Fabry"@en)
+Annotation(dcterms:description "Ontology of health procedure related entities"@en)
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "HEalth PRocedure Ontology")
 
-
-Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000000>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000001>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000002>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000003>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000004>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000005>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000006>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000007>))
+Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000008>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
+
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/HEPRO_0000000> (root node)
+# Class: <http:/purl.obolibrary.org/obo/HEPRO_0000001> (health procedure request)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000000> "root node"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/HEPRO_0000001> "A request specifying the execution of some health procedures."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/HEPRO_0000001> "health procedure request"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000001> <http:/purl.obolibrary.org/obo/NOYO_0000001>)
+
+# Class: <http:/purl.obolibrary.org/obo/HEPRO_0000002> (health procedure order)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/HEPRO_0000002> "A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/HEPRO_0000002> "health procedure order"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000002> <http:/purl.obolibrary.org/obo/HEPRO_0000001>)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http:/purl.obolibrary.org/obo/HEPRO_0000001>))
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http:/purl.obolibrary.org/obo/HEPRO_0000004>))
+
+# Class: <http:/purl.obolibrary.org/obo/HEPRO_0000003> (health procedure report)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/HEPRO_0000003> "An information content entity containing information about some health procedure requests and possibly the associated health procedures."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/HEPRO_0000003> "health procedure report"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000003> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http:/purl.obolibrary.org/obo/HEPRO_0000004> (health procedure)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/HEPRO_0000004> "A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/HEPRO_0000004> "health procedure"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000004> <http://purl.obolibrary.org/obo/OBI_0000011>)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002018> <http:/purl.obolibrary.org/obo/HEPRO_0000005>))
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000004> ObjectSomeValuesFrom(<http:/purl.obolibrary.org/obo/NOYO_0000008> <http:/purl.obolibrary.org/obo/HEPRO_0000001>))
+
+# Class: <http:/purl.obolibrary.org/obo/HEPRO_0000005> (health activity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/HEPRO_0000005> "A planned process that aims to produce a truthful statement about the health status of an organism or modify it."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/HEPRO_0000005> "health activity"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000005> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http:/purl.obolibrary.org/obo/HEPRO_0000006> (health procedure resulting process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/HEPRO_0000006> "A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/HEPRO_0000006> "health procedure resulting process"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000006> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http:/purl.obolibrary.org/obo/HEPRO_0000007> (health procedure outcome information)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/HEPRO_0000007> "An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/HEPRO_0000007> "health procedure outcome information"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000007> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http:/purl.obolibrary.org/obo/HEPRO_0000006>))
+
+# Class: <http:/purl.obolibrary.org/obo/HEPRO_0000008> (health activity outcome information)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/HEPRO_0000008> "An information content entity that is a specified output of a health activity."@en)
+AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/HEPRO_0000008> "health activity outcome information"@en)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000008> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002352> <http:/purl.obolibrary.org/obo/HEPRO_0000006>))
+SubClassOf(<http:/purl.obolibrary.org/obo/HEPRO_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http:/purl.obolibrary.org/obo/HEPRO_0000005>))
 
 
 )
-

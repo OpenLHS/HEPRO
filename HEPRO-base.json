@@ -3,11 +3,23 @@
     "id" : "http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.json",
     "meta" : {
       "basicPropertyValues" : [ {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Adrien Barton"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "François Goyer"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Jean-François Ethier"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Paul Fabry"
+      }, {
         "pred" : "http://purl.org/dc/elements/1.1/type",
         "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
       }, {
         "pred" : "http://purl.org/dc/terms/description",
-        "val" : "None"
+        "val" : "Ontology of health procedure related entities"
       }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "https://creativecommons.org/licenses/unspecified"
@@ -21,10 +33,6 @@
       "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-04-26/HEPRO-base.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000000",
-      "lbl" : "root node",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
       "type" : "PROPERTY"
@@ -36,6 +44,139 @@
       "id" : "http://purl.org/dc/terms/title",
       "lbl" : "title",
       "type" : "PROPERTY"
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000001",
+      "lbl" : "health procedure request",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A request specifying the execution of some health procedures."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
+      "lbl" : "health procedure order",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000003",
+      "lbl" : "health procedure report",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity containing information about some health procedure requests and possibly the associated health procedures."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
+      "lbl" : "health procedure",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000005",
+      "lbl" : "health activity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process that aims to produce a truthful statement about the health status of an organism or modify it."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000006",
+      "lbl" : "health procedure resulting process",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000007",
+      "lbl" : "health procedure outcome information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000008",
+      "lbl" : "health activity outcome information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is a specified output of a health activity."
+        }
+      }
+    } ],
+    "edges" : [ {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000001",
+      "pred" : "is_a",
+      "obj" : "http:/purl.obolibrary.org/obo/NOYO_0000001"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
+      "pred" : "is_a",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000001"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000001"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002018",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000005"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
+      "pred" : "http:/purl.obolibrary.org/obo/NOYO_0000008",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000001"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000007",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000006"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000008",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002352",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000006"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000008",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000005"
     } ]
   } ]
 }
