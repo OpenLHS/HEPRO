@@ -1,0 +1,19 @@
+id: HEPRO
+title: HEalth PRocedure Ontology
+github_org: OpenLHS
+repo: HEPRO
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - full
+  - base
+primary_release: full
+export_formats:
+  - owl
+  - json
+import_group:
+  products:
+    - id: NOYO
+      module_type: mirror
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/NOYO/main/NOYO-full.owl"
+robot_java_args: "-Xmx8G"
