@@ -15,7 +15,7 @@ Annotation(dce:contributor "François Goyer"@en)
 Annotation(dce:contributor "Jean-François Ethier"@en)
 Annotation(dce:contributor "Paul Fabry"@en)
 Annotation(dcterms:description "Ontology of health procedure related entities"@en)
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "HEalth PRocedure Ontology")
 
 Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000001>))
