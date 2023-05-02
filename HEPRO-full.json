@@ -25,9 +25,9 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-04-27"
+        "val" : "2023-05-02"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-04-27/HEPRO-full.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-02/HEPRO-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -2652,6 +2652,69 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000019",
+      "lbl" : "Canadian postal code part",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A location identifier that is about some geographical region in Canada, used to assist with postal delivery."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000020",
+      "lbl" : "postal address city",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "a city identifier that is part of a postal address"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000021",
+      "lbl" : "postal address country",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A country identifier that is part of a postal address."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000022",
+      "lbl" : "Canadian first-order administrative region",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A location identifier that denotes a Canadian province or a Canadian territory."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000023",
+      "lbl" : "Canadian census subdivision",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A location identifier that denotes a municipality (as determined by provincial/territorial legislation) or an area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories)."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000024",
+      "lbl" : "human identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a particular homo sapiens."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000026",
+      "lbl" : "location identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a particular location."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000011",
       "lbl" : "planned process",
       "type" : "CLASS",
@@ -3515,7 +3578,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An information content entity that is about the location of some entity. (TBD)"
+          "val" : "An information content entity that denotes the location of some entity. (TBD)"
         }
       }
     }, {
@@ -3623,6 +3686,24 @@
       "id" : "http:/purl.obolibrary.org/obo/NOYO_0000016",
       "lbl" : "fills",
       "type" : "PROPERTY"
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/NOYO_0000017",
+      "lbl" : "postal code",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An address that is used to assist with postal delivery."
+        }
+      }
+    }, {
+      "id" : "http:/purl.obolibrary.org/obo/NOYO_0000018",
+      "lbl" : "Canadian postal code",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A postal code information that is about some geographical region in Canada."
+        }
+      }
     } ],
     "edges" : [ {
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -3865,6 +3946,34 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_2759"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000019",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000022",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000023",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000024",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000011",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
@@ -3955,7 +4064,7 @@
     }, {
       "sub" : "http:/purl.obolibrary.org/obo/NOYO_0000004",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000026"
     }, {
       "sub" : "http:/purl.obolibrary.org/obo/NOYO_0000005",
       "pred" : "is_a",
@@ -4012,6 +4121,14 @@
       "sub" : "http:/purl.obolibrary.org/obo/NOYO_0000015",
       "pred" : "http:/purl.obolibrary.org/obo/NOYO_0000016",
       "obj" : "http:/purl.obolibrary.org/obo/NOYO_0000014"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/NOYO_0000017",
+      "pred" : "is_a",
+      "obj" : "http:/purl.obolibrary.org/obo/NOYO_0000004"
+    }, {
+      "sub" : "http:/purl.obolibrary.org/obo/NOYO_0000018",
+      "pred" : "is_a",
+      "obj" : "http:/purl.obolibrary.org/obo/NOYO_0000017"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000142",
       "pred" : "subPropertyOf",
