@@ -28,9 +28,9 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-04-27"
+        "val" : "2023-05-02"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-04-27/HEPRO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-02/HEPRO-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.org/dc/terms/description",
