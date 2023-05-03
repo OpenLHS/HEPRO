@@ -9,3 +9,4 @@ WHERE {
   OPTIONAL { ?property def: ?def }  .
   FILTER contains(STR(?property), "HEPRO_")
   }
+ORDER BY ?IRI
