@@ -28,9 +28,9 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-02"
+        "val" : "2023-05-03"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-02/HEPRO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-03/HEPRO-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.org/dc/terms/description",
@@ -120,7 +120,7 @@
     "edges" : [ {
       "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000001",
       "pred" : "is_a",
-      "obj" : "http:/purl.obolibrary.org/obo/NOYO_0000001"
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000001"
     }, {
       "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
       "pred" : "is_a",
@@ -143,12 +143,12 @@
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
       "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002018",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000005"
+      "pred" : "http://purl.obolibrary.org/obo/NOYO_0000008",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000001"
     }, {
       "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
-      "pred" : "http:/purl.obolibrary.org/obo/NOYO_0000008",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000001"
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002018",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000005"
     }, {
       "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000005",
       "pred" : "is_a",
