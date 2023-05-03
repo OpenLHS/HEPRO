@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HEPRO/imports/NOYO_import.owl>
-<http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-02/imports/NOYO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/NOYO/releases/2023-05-02/NOYO-full.owl>)
-Annotation(owl:versionInfo "2023-05-02")
+<http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-03/imports/NOYO_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/NOYO/releases/2023-05-03/NOYO-full.owl>)
+Annotation(owl:versionInfo "2023-05-03")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -52,8 +52,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000310>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000422>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000578>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000646>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10239>))
@@ -61,31 +64,40 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2157>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2759>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000019>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000020>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000021>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000024>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000070>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000071>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NOYO_0000073>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000001>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000002>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000003>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000004>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000005>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000006>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000009>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000010>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000011>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000012>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000013>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000014>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000015>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000017>))
-Declaration(Class(<http:/purl.obolibrary.org/obo/NOYO_0000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000204>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000209>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000210>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000212>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -97,6 +109,9 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000142>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000143>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000219>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000235>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000007>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000008>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000016>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
@@ -122,9 +137,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002352>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002479>))
-Declaration(ObjectProperty(<http:/purl.obolibrary.org/obo/NOYO_0000007>))
-Declaration(ObjectProperty(<http:/purl.obolibrary.org/obo/NOYO_0000008>))
-Declaration(ObjectProperty(<http:/purl.obolibrary.org/obo/NOYO_0000016>))
 Declaration(AnnotationProperty(<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000179>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/BFO_0000180>))
@@ -273,7 +285,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/iao.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000116> "editor note"@en)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (term editor)
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (definition editor)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000117> "term editor"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -282,7 +294,9 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Daniel Schober"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000117> "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/iao.owl>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "definition editor"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "term editor"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "definition editor")
 
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (alternative label)
 
@@ -645,6 +659,20 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000235> "den
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/IAO_0000235> <http://purl.obolibrary.org/obo/BFO_0000001>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/IAO_0000235> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000007> (directs)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000007> "directs"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/NOYO_0000007> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/NOYO_0000007> <http://purl.obolibrary.org/obo/NOYO_0000008>)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000008> (is directed by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000008> "is directed by"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000016> (fills)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000016> "fills"@en)
+
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000299> "has_specified_output"@en)
@@ -913,20 +941,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002479> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/RO_0002479> <http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002479> "has part that occurs in")
-
-# Object Property: <http:/purl.obolibrary.org/obo/NOYO_0000007> (directs)
-
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000007> "directs"@en)
-SubObjectPropertyOf(<http:/purl.obolibrary.org/obo/NOYO_0000007> <http://purl.obolibrary.org/obo/IAO_0000136>)
-InverseObjectProperties(<http:/purl.obolibrary.org/obo/NOYO_0000007> <http:/purl.obolibrary.org/obo/NOYO_0000008>)
-
-# Object Property: <http:/purl.obolibrary.org/obo/NOYO_0000008> (is directed by)
-
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000008> "is directed by"@en)
-
-# Object Property: <http:/purl.obolibrary.org/obo/NOYO_0000016> (fills)
-
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000016> "fills"@en)
 
 
 
@@ -1644,6 +1658,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> <http://purl.obolibrary.
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000005>))
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000104> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000007>))
 
+# Class: <http://purl.obolibrary.org/obo/IAO_0000300> (textual entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000300> "textual entity"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000300> "Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000123>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000300> "A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000300> "AR, (IAO call 2009-09-01): a document as a whole is not typically a textual entity, because it has pictures in it - rather there are parts of it that are textual entities. Examples: The title, paragraph 2 sentence 7, etc."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000300> "MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000300> "PERSON: Lawrence Hunter"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/IAO_0000300> "text"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000300> "textual entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000300> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
 # Class: <http://purl.obolibrary.org/obo/IAO_0000310> (document)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000310> "document"@en)
@@ -1653,6 +1680,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000310> "PERSON: Lawrence Hunter"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000310> "document"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000310> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000422> (postal address)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000422> <http://purl.obolibrary.org/obo/IAO_0000123>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000422> "A textual entity that is used as directive to deliver something to a person, or organization")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000422> "2010-05-24 Alan Ruttenberg. Use label for the string representation. See issue https://github.com/information-artifact-ontology/IAO/issues/59")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000422> "postal address"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000422> <http://purl.obolibrary.org/obo/IAO_0000300>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000578> (centrally registered identifier)
 
@@ -1671,6 +1706,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000578> "centrally registered identifier"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000578> <http://purl.obolibrary.org/obo/IAO_0020000>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000578> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000030>))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000646> (postal code)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000646> "An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000646> "Mathias Brochhausen"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000646> "postal code"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000646> <http://purl.obolibrary.org/obo/IAO_0020000>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0020000> (identifier)
 
@@ -1744,35 +1786,127 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
 
-# Class: <http://purl.obolibrary.org/obo/NOYO_0000019> (Canadian postal code part)
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000001> (request)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000019> "A location identifier that is about some geographical region in Canada, used to assist with postal delivery."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000019> "Canadian postal code part"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000019> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000001> "An information content entity representing the will of a person to have something done and specifications for the latter."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000001> "request"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000001> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000033>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000002> (service offer)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000002> "An information content entity describing the processes a person or an organization is willing to perform, usually for a compensation."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000002> "service offer"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000002> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000003> (service agreement specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000003> "An information content entity that specifies a service agreement made between a request party and a service offer party. A service agreement specification can direct some processes that correspond to what has been agreed between the parties."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000003> "service agreement specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000003> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000005> (service agreement negotiation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000005> "A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000005> "service agreement negotiation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000005> <http://purl.obolibrary.org/obo/OBI_0000011>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002233> <http://purl.obolibrary.org/obo/NOYO_0000001>))
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002233> <http://purl.obolibrary.org/obo/NOYO_0000002>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000006> (service delivery)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000006> "A planned process that aims at fulfilling the commitments of a service agreement."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000006> "service delivery"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000006> <http://purl.obolibrary.org/obo/OBI_0000011>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/NOYO_0000008> <http://purl.obolibrary.org/obo/NOYO_0000003>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000009> (temporal characterization)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000009> "An information content entity that is about a one-dimension temporal region."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000009> "temporal characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000009> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000010> (process temporal characterization)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000010> "A temporal specification that is about the occupation of a temporal interval by some processes."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000010> "process temporal characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000010> <http://purl.obolibrary.org/obo/NOYO_0000009>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000015>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000011> (statement validity temporal characterization)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000011> "A temporal characterization specifying a temporal region during which a statement is considered valid."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000011> "statement validity temporal characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000011> <http://purl.obolibrary.org/obo/NOYO_0000009>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/NOYO_0000013>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000012> (informational entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000012> "A generically dependent continuant that is a building block of information or a combination thereof."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/NOYO_0000012> "Contrarily to ICE, informational entities are not necessarily about some things. Therefore they includes ICE, but also words like 'unicorn', letters like 'a' or pictures of unicorns."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000012> "informational entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000012> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000013> (statement)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000013> "An informational entity that is considered valid by some agent at some point in time. (TBD)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000013> "statement"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000013> <http://purl.obolibrary.org/obo/NOYO_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000014> (informational slot)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/NOYO_0000014> "A template for an academic journal article, a field in a form that is supposed to be filled by a last name, the position for 'a' in the word 'cat', a position on a musical partition are all examples of informational slots."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000014> "An informational entity that can be filled by an informational filler."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000014> "informational slot"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000014> <http://purl.obolibrary.org/obo/NOYO_0000012>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000015> (informational filler)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/NOYO_0000015> "An academic journal article, the last name of a person, the letter 'a', a musical note are all examples of informational fillers."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000015> "An informational entity that fills an informational slot."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000015> "informational filler"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000015> <http://purl.obolibrary.org/obo/NOYO_0000012>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/NOYO_0000016> <http://purl.obolibrary.org/obo/NOYO_0000014>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000018> (canadian postal code)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000018> "A postal code information that is about some geographical region in Canada."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000018> "canadian postal code"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000018> <http://purl.obolibrary.org/obo/IAO_0000646>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000018> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NOYO_0000019>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000019> (canadian forward sorting area code)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000019> "An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000019> "canadian forward sorting area code"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000019> <http://purl.obolibrary.org/obo/IAO_0020000>)
 
 # Class: <http://purl.obolibrary.org/obo/NOYO_0000020> (postal address city)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000020> "a city identifier that is part of a postal address"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000020> "An identifier that denotes a city as part of a postal address."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000020> "postal address city"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000020> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000020> <http://purl.obolibrary.org/obo/IAO_0020000>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/IAO_0000422>))
 
 # Class: <http://purl.obolibrary.org/obo/NOYO_0000021> (postal address country)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000021> "A country identifier that is part of a postal address."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000021> "An identifier that denotes a country is part of a postal address."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000021> "postal address country"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000021> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000021> <http://purl.obolibrary.org/obo/IAO_0020000>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/IAO_0000422>))
 
-# Class: <http://purl.obolibrary.org/obo/NOYO_0000022> (Canadian first-order administrative region)
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000022> (canadian first-order administrative region identifier)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000022> "A location identifier that denotes a Canadian province or a Canadian territory."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000022> "Canadian first-order administrative region"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000022> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000022> "An identifier that denotes a Canadian province or a Canadian territory."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000022> "canadian first-order administrative region identifier"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000022> <http://purl.obolibrary.org/obo/IAO_0020000>)
 
-# Class: <http://purl.obolibrary.org/obo/NOYO_0000023> (Canadian census subdivision)
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000023> (canadian census subdivision identifier)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000023> "A location identifier that denotes a municipality (as determined by provincial/territorial legislation) or an area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories)."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000023> "Canadian census subdivision"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000023> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000023> "An identifier that denotes a municipality (as determined by provincial/territorial legislation) or an area treated as a municipal equivalent for statistical purposes (e.g., Indian reserves, Indian settlements and unorganized territories)."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000023> "canadian census subdivision identifier"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000023> <http://purl.obolibrary.org/obo/IAO_0020000>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000235> <http://purl.obolibrary.org/obo/NOYO_0000018>))
 
 # Class: <http://purl.obolibrary.org/obo/NOYO_0000024> (human identifier)
 
@@ -1780,11 +1914,53 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000024> "human identifier"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000024> <http://purl.obolibrary.org/obo/IAO_0020000>)
 
-# Class: <http://purl.obolibrary.org/obo/NOYO_0000026> (location identifier)
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000025> (canadian postal address)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000026> "An identifier that denotes a particular location."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000026> "location identifier"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000026> <http://purl.obolibrary.org/obo/IAO_0020000>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000025> "A postal address that can be used to help the delivery of something in Canada."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000025> "canadian postal address"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000025> <http://purl.obolibrary.org/obo/IAO_0000422>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000025> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NOYO_0000018>))
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000025> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NOYO_0000020>))
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000025> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NOYO_0000021>))
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000025> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/NOYO_0000022>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000065> (statement validity beginning characterization)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/NOYO_0000065> "A statement validity temporal characterization specifying a temporal region at which point the statement begins to be considered valid."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000065> "statement validity beginning characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000065> <http://purl.obolibrary.org/obo/NOYO_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000066> (statement validity ending characterization)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/NOYO_0000066> "A statement validity temporal characterization specifying a temporal region at which point the statement ceases to be considered valid."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000066> "statement validity ending characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000066> <http://purl.obolibrary.org/obo/NOYO_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000070> (human birth date)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000070> "A process temporal specification that is about the birth date of an homo sapiens."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000070> "human birth date"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000070> <http://purl.obolibrary.org/obo/NOYO_0000010>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000071> (human death date)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000071> "A process temporal specification that is about the date of death of an homo sapiens."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000071> "human death date"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000071> <http://purl.obolibrary.org/obo/NOYO_0000010>)
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000072> (human biological sex information content entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000072> "An information content entity that denotes the biological sex of a human."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000072> "human biological sex information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000072> <http://purl.obolibrary.org/obo/NOYO_0000073>)
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000072> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+
+# Class: <http://purl.obolibrary.org/obo/NOYO_0000073> (biological sex or gender identity information content entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000073> "An information content entity that is intended to denote a biological sex or a gender identity."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000073> "biological sex or gender identity information content entity"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/NOYO_0000073> ObjectUnionOf(<http://purl.obolibrary.org/obo/NOYO_0000072> <http://purl.obolibrary.org/obo/OMRSE_00000209>))
+SubClassOf(<http://purl.obolibrary.org/obo/NOYO_0000073> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 # Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
 
@@ -1864,104 +2040,67 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0100026> "org
 EquivalentClasses(<http://purl.obolibrary.org/obo/OBI_0100026> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_10239> <http://purl.obolibrary.org/obo/NCBITaxon_2> <http://purl.obolibrary.org/obo/NCBITaxon_2157> <http://purl.obolibrary.org/obo/NCBITaxon_2759>))
 SubClassOf(<http://purl.obolibrary.org/obo/OBI_0100026> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000001> (request)
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000204> (social identity information content entity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000001> "An information content entity representing the will of a person to have something done and specifications for the latter."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000001> "request"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000001> <http://purl.obolibrary.org/obo/IAO_0000030>)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000033>))
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000204> "An information content entity that is intended to be a truthful statement about some person and whether that person identifies as some particular aspect of social identity—such as a gender, an ethnicity, a race, or a sexual orientation—where the sense of identifying may correspond to either (i) an aspect of one’s cognitive representation of oneself, (ii) how one prefers to be regarded by others within some social context, or (iii) how one chooses to present oneself to others within some social context."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000204> "S. Clint Dowland"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000204> "Amanda Hicks"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000204> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000204> "Matthew Diller"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000204> "Sarah Bost"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000204> "William R. Hogan"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000204> "We include (i)-(iii) to acknowledge that there are different senses of \"identify\" that are relevant here, and that we may not always be sure which sense the person concretizing the social identity information content entity intended. While (i) concerns how one thinks of oneself, (ii) and (iii) are more focused on one's interactions with others. Importantly, some choose not to share with others how they identify in the sense of (i). For example, one can consider oneself to be some certain gender without either wanting others to know or choosing to present oneself in a corresponding way. We distinguish (ii) and (iii) because one can prefer to be regarded some certain way without attempting to present oneself in any corresponding way."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000204> "social identity information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000204> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000002> (service offer)
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000209> (gender identity information content entity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000002> "An information content entity describing the processes a person or an organization is willing to perform, usually for a compensation."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000002> "service offer"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000002> <http://purl.obolibrary.org/obo/IAO_0000030>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000209> "A social identity information content entity that is about whether some person identifies as some gender."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000209> "S. Clint Dowland"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000209> "Amanda Hicks"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000209> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000209> "Matthew Diller"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000209> "Sarah Bost"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000209> "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000209> "gender identity information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000209> <http://purl.obolibrary.org/obo/NOYO_0000073>)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000209> <http://purl.obolibrary.org/obo/OMRSE_00000204>)
 
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000003> (service agreement specification)
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000210> (female gender identity information content entity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000003> "An information content entity that specifies a service agreement made between a request party and a service offer party. A service agreement specification can direct some processes that correspond to what has been agreed between the parties."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000003> "service agreement specification"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000003> <http://purl.obolibrary.org/obo/IAO_0000030>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000210> "A gender identity information content entity that is about some person's identifying as female in gender."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000210> "S. Clint Dowland"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000210> "Amanda Hicks"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000210> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000210> "Matthew Diller"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000210> "Sarah Bost"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000210> "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000210> "female gender identity information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000210> <http://purl.obolibrary.org/obo/OMRSE_00000209>)
 
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000004> (address)
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000211> (male gender identity information content entity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000004> "An information content entity that denotes the location of some entity. (TBD)"@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000004> "address"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000004> <http://purl.obolibrary.org/obo/NOYO_0000026>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000211> "A gender identity information content entity that is about some person's identifying as male in gender."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000211> "S. Clint Dowland"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000211> "Amanda Hicks"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000211> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000211> "Matthew Diller"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000211> "Sarah Bost"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000211> "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000211> "male gender identity information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000211> <http://purl.obolibrary.org/obo/OMRSE_00000209>)
 
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000005> (service agreement negotiation)
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000212> (non-binary identity information content entity)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000005> "A planned process of interaction between a request party and a service offer party having as specified input some request and some service offer and that aims to generate as output a service agreement."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000005> "service agreement negotiation"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000005> <http://purl.obolibrary.org/obo/OBI_0000011>)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002233> <http:/purl.obolibrary.org/obo/NOYO_0000001>))
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002233> <http:/purl.obolibrary.org/obo/NOYO_0000002>))
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000006> (service delivery)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000006> "A planned process that aims at fulfilling the commitments of a service agreement."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000006> "service delivery"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000006> <http://purl.obolibrary.org/obo/OBI_0000011>)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000006> ObjectSomeValuesFrom(<http:/purl.obolibrary.org/obo/NOYO_0000008> <http:/purl.obolibrary.org/obo/NOYO_0000003>))
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000009> (temporal characterization)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000009> "An information content entity that is about a one-dimension temporal region."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000009> "temporal characterization"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000009> <http://purl.obolibrary.org/obo/IAO_0000030>)
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000010> (process temporal characterization)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000010> "A temporal specification that is about the occupation of a temporal interval by some processes."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000010> "process temporal characterization"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000010> <http:/purl.obolibrary.org/obo/NOYO_0000009>)
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000011> (statement validity temporal characterization)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000011> "A temporal characterization specifying a temporal region during which a statement is considered valid."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000011> "statement validity temporal characterization"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000011> <http:/purl.obolibrary.org/obo/NOYO_0000009>)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http:/purl.obolibrary.org/obo/NOYO_0000013>))
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000012> (informational entity)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000012> "A generically dependent continuant that is a building block of information or a combination thereof."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http:/purl.obolibrary.org/obo/NOYO_0000012> "Contrarily to ICE, informational entities are not necessarily about some things. Therefore they includes ICE, but also words like 'unicorn', letters like 'a' or pictures of unicorns."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000012> "informational entity"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000012> <http://purl.obolibrary.org/obo/BFO_0000031>)
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000013> (statement)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000013> "An informational entity that is considered valid by some agent at some point in time. (TBD)"@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000013> "statement"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000013> <http:/purl.obolibrary.org/obo/NOYO_0000012>)
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000014> (informational slot)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http:/purl.obolibrary.org/obo/NOYO_0000014> "A template for an academic journal article, a field in a form that is supposed to be filled by a last name, the position for 'a' in the word 'cat', a position on a musical partition are all examples of informational slots."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000014> "An informational entity that can be filled by an informational filler."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000014> "informational slot"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000014> <http:/purl.obolibrary.org/obo/NOYO_0000012>)
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000015> (informational filler)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http:/purl.obolibrary.org/obo/NOYO_0000015> "An academic journal article, the last name of a person, the letter 'a', a musical note are all examples of informational fillers."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000015> "An informational entity that fills an informational slot."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000015> "informational filler"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000015> <http:/purl.obolibrary.org/obo/NOYO_0000012>)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000015> ObjectSomeValuesFrom(<http:/purl.obolibrary.org/obo/NOYO_0000016> <http:/purl.obolibrary.org/obo/NOYO_0000014>))
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000017> (postal code)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000017> "An address that is used to assist with postal delivery."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000017> "postal code"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000017> <http:/purl.obolibrary.org/obo/NOYO_0000004>)
-
-# Class: <http:/purl.obolibrary.org/obo/NOYO_0000018> (Canadian postal code)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http:/purl.obolibrary.org/obo/NOYO_0000018> "A postal code information that is about some geographical region in Canada."@en)
-AnnotationAssertion(rdfs:label <http:/purl.obolibrary.org/obo/NOYO_0000018> "Canadian postal code"@en)
-SubClassOf(<http:/purl.obolibrary.org/obo/NOYO_0000018> <http:/purl.obolibrary.org/obo/NOYO_0000017>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000212> "A gender identity information content entity that is about some person's identifying as non-binary in gender."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000212> "S. Clint Dowland"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000212> "Amanda Hicks"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000212> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000212> "Matthew Diller"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000212> "Sarah Bost"@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000212> "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000212> "non-binary identity information content entity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000212> <http://purl.obolibrary.org/obo/OMRSE_00000209>)
 
 
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/BFO_0000066>) <http://purl.obolibrary.org/obo/BFO_0000066>)
