@@ -9,3 +9,4 @@ WHERE {
   OPTIONAL { ?cls def: ?def }  .
   FILTER contains(STR(?cls), "HEPRO_")
   }
+ORDER BY ?IRI
