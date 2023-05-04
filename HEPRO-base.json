@@ -28,11 +28,29 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-03"
+        "val" : "2023-05-04"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-03/HEPRO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-04/HEPRO-base.json"
     },
     "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000034",
+      "lbl" : "surgical health procedure",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "TBD"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000035",
+      "lbl" : "diagnostic health procedure",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "TBD"
+        }
+      }
+    }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
       "type" : "PROPERTY"
@@ -118,6 +136,14 @@
       }
     } ],
     "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000034",
+      "pred" : "is_a",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000035",
+      "pred" : "is_a",
+      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
       "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000001",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NOYO_0000001"

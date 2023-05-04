@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HEPRO/imports/NOYO_import.owl>
-<http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-03/imports/NOYO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/NOYO/releases/2023-05-03/NOYO-full.owl>)
-Annotation(owl:versionInfo "2023-05-03")
+<http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-04/imports/NOYO_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/NOYO/releases/2023-05-04/NOYO-full.owl>)
+Annotation(owl:versionInfo "2023-05-04")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -112,6 +112,10 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000235>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000007>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000008>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000016>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000030>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000031>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000032>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/NOYO_0000033>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
@@ -672,6 +676,28 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000008> "is
 # Object Property: <http://purl.obolibrary.org/obo/NOYO_0000016> (fills)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000016> "fills"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000030> (characterizes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000030> "A characterizes B means that A is about a main feature or quality of B."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000030> "characterizes"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/NOYO_0000030> <http://purl.obolibrary.org/obo/IAO_0000136>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/NOYO_0000030> <http://purl.obolibrary.org/obo/NOYO_0000031>)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000031> (is characterized by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000031> "is characterized by"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000032> (temporally characterizes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/NOYO_0000032> "A temporally characterizes B means that A is about a maintemporal feature or quality of B."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000032> "temporally characterizes"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/NOYO_0000032> <http://purl.obolibrary.org/obo/NOYO_0000030>)
+
+# Object Property: <http://purl.obolibrary.org/obo/NOYO_0000033> (is temporally characterized by)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NOYO_0000033> "is temporally characterized by"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/NOYO_0000033> <http://purl.obolibrary.org/obo/NOYO_0000031>)
 
 # Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)
 

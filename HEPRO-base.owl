@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-03/HEPRO-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-04/HEPRO-base.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">François Goyer</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
@@ -19,7 +19,7 @@
         <terms:description xml:lang="en">Ontology of health procedure related entities</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>HEalth PRocedure Ontology</terms:title>
-        <owl:versionInfo>2023-05-03</owl:versionInfo>
+        <owl:versionInfo>2023-05-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -126,6 +126,26 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000034">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">surgical health procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000035">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">diagnostic health procedure</rdfs:label>
+    </owl:Class>
     
 
 

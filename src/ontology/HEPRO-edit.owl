@@ -18,6 +18,8 @@ Annotation(dcterms:description "Ontology of health procedure related entities"@e
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "HEalth PRocedure Ontology")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000035>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000001>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000002>))
 Declaration(Class(<http:/purl.obolibrary.org/obo/HEPRO_0000003>))
@@ -51,6 +53,18 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000034> (surgical health procedure)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HEPRO_0000034> "TBD"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000034> "surgical health procedure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000034> <http:/purl.obolibrary.org/obo/HEPRO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000035> (diagnostic health procedure)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HEPRO_0000035> "TBD"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000035> "diagnostic health procedure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000035> <http:/purl.obolibrary.org/obo/HEPRO_0000004>)
 
 # Class: <http:/purl.obolibrary.org/obo/HEPRO_0000001> (health procedure request)
 

@@ -14,7 +14,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-03/HEPRO.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-04/HEPRO.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">François Goyer</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
@@ -22,7 +22,7 @@
         <terms:description xml:lang="en">Ontology of health procedure related entities</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>HEalth PRocedure Ontology</terms:title>
-        <owl:versionInfo>2023-05-03</owl:versionInfo>
+        <owl:versionInfo>2023-05-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -831,6 +831,44 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000016">
         <rdfs:label xml:lang="en">fills</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000030 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000030">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000031"/>
+        <obo:IAO_0000115 xml:lang="en">A characterizes B means that A is about a main feature or quality of B.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">characterizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000031 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000031">
+        <rdfs:label xml:lang="en">is characterized by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000032 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000032">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A temporally characterizes B means that A is about a maintemporal feature or quality of B.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">temporally characterizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NOYO_0000033 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000033">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000031"/>
+        <rdfs:label xml:lang="en">is temporally characterized by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2684,6 +2722,26 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:annotatedTarget xml:lang="en">A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by a material entity or site, including processes on the surface of the entity or within the cavities to which it serves as host. (axiom label in BFO2 Reference: [138-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/138-001"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000034">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">surgical health procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000035">
+        <rdfs:subClassOf rdf:resource="http:/purl.obolibrary.org/obo/HEPRO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">diagnostic health procedure</rdfs:label>
+    </owl:Class>
     
 
 
