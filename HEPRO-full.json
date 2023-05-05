@@ -25,9 +25,9 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-04"
+        "val" : "2023-05-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-04/HEPRO-full.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-05/HEPRO-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000001",
@@ -1192,6 +1192,9 @@
           "val" : "http://purl.obolibrary.org/obo/ido.owl"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/omrse.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/uberon.owl"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
@@ -1378,6 +1381,46 @@
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "lbl" : "preceded by",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "preceded by"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "is preceded by"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "preceded_by"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "http://www.obofoundry.org/ro/#OBO_REL:preceded_by"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000063",
+      "lbl" : "precedes",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "precedes"
         } ]
       }
     }, {
@@ -1724,8 +1767,120 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000034",
-      "lbl" : "surgical health procedure",
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000001",
+      "lbl" : "health procedure request",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A request specifying the execution of some health procedures."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
+      "lbl" : "health procedure order",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000003",
+      "lbl" : "health procedure report",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity containing information about some health procedure requests and possibly the associated health procedures."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
+      "lbl" : "health procedure",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000005",
+      "lbl" : "health activity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process that aims to produce a truthful statement about the health status of an organism or modify it."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000006",
+      "lbl" : "health procedure resulting process",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000007",
+      "lbl" : "health procedure outcome information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000008",
+      "lbl" : "health activity outcome information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is a specified output of a health activity."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000009",
+      "lbl" : "health provider identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An individual identifier that denotes a health provider."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000010",
+      "lbl" : "physician identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A health provider identifier that is used to denote a person authorised to act as a physician."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000011",
+      "lbl" : "health provider role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A role that inheres in an organism as a consequence of training in order to be able to participate as a performer in some health activities."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "This usually includes health professional like physicians, nurses or pharmacists etc.\nIt could also includes non professionals like patient attendant but it would exclude others like secretaries or accountants."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000012",
+      "lbl" : "health provider",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An organism that is the bearer of a health provider role."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000013",
+      "lbl" : "diagnostic health procedure",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -1733,8 +1888,8 @@
         }
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000035",
-      "lbl" : "diagnostic health procedure",
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000014",
+      "lbl" : "surgical health procedure",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -2921,7 +3076,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An identifier that denotes a particular homo sapiens."
+          "val" : "An identifier that denotes a particular human being."
         }
       }
     }, {
@@ -2959,6 +3114,51 @@
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000033",
       "lbl" : "is temporally characterized by",
       "type" : "PROPERTY"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000049",
+      "lbl" : "state sanctioned statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A statement whom agent considering it true is a state."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000050",
+      "lbl" : "birth statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A statement about the information surrounding the birth of a human."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000051",
+      "lbl" : "death statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A statement about the information surrounding the death of a human."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000052",
+      "lbl" : "civil birth record",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A state sanctioned statement about the information surrounding the birth of a human."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NOYO_0000053",
+      "lbl" : "civil death record",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A state sanctioned statement about the information surrounding the death of a human."
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/NOYO_0000065",
       "lbl" : "statement validity beginning characterization",
@@ -3189,6 +3389,36 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "WEB: http://en.wikipedia.org/wiki/Organism"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000061",
+      "lbl" : "architectural structure",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A material entity that is a human made strcuture with firm connection between its foundation and the ground."
+        },
+        "comments" : [ "\"Building\" is a subclass of this. ", "This type of entity is referred to as \"Bauwerk\" or \"Bauliche Anlage\"." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Mathias Brochhausen"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://de.wikipedia.org/wiki/Bauwerk"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000062",
+      "lbl" : "facility",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An architectural structure that bears some function."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Mathias Brochhausen"
         } ]
       }
     }, {
@@ -3653,6 +3883,198 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002081",
+      "lbl" : "before or simultaneous with",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "Primitive instance level timing relation between events" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "<="
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002082",
+      "lbl" : "simultaneous with",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "t1 simultaneous_with t2 iff:=  t1 before_or_simultaneous_with t2  and not (t1 before t2)" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002083",
+      "lbl" : "before",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "t1 before t2 iff:=  t1 before_or_simulataneous_with t2  and not (t1 simultaeous_with t2)" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002084",
+      "lbl" : "during which ends",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "Previously had ID  http://purl.obolibrary.org/obo/RO_0002122 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002085",
+      "lbl" : "encompasses",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "Previously had ID  http://purl.obolibrary.org/obo/RO_0002124 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "di"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002086",
+      "lbl" : "ends after",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "lbl" : "immediately preceded by",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "starts_at_end_of"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002088",
+      "lbl" : "during which starts",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "Previously had ID  http://purl.obolibrary.org/obo/RO_0002123 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002089",
+      "lbl" : "starts before",
+      "type" : "PROPERTY",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002090",
+      "lbl" : "immediately precedes",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "ends_at_start_of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "meets"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0002575",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000063"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002091",
+      "lbl" : "starts during",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "X starts_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (start(X) before_or_simultaneous_with end(Y))" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "io"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002092",
+      "lbl" : "happens during",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "X happens_during Y iff: (start(Y) before_or_simultaneous_with start(X)) AND (end(X) before_or_simultaneous_with end(Y))" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam", "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "d"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "during"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002093",
+      "lbl" : "ends during",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). " ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "o"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "overlaps"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002180",
       "lbl" : "has component",
       "type" : "PROPERTY",
@@ -3676,6 +4098,122 @@
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "val" : "http://ontologydesignpatterns.org/wiki/Submissions:Componency"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002222",
+      "lbl" : "temporally related to",
+      "type" : "PROPERTY",
+      "meta" : {
+        "comments" : [ "A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "https://en.wikipedia.org/wiki/Allen%27s_interval_algebra"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends."
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002223",
+      "lbl" : "starts",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "inverse of starts with"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Allen"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002224",
+      "lbl" : "starts with",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) < ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Every insulin receptor signaling pathway starts with the binding of a ligand to the insulin receptor"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "started by"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002229",
+      "lbl" : "ends",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "inverse of ends with"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002230",
+      "lbl" : "ends with",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Chris Mungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "finished by"
         } ]
       }
     }, {
@@ -3802,6 +4340,28 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002575",
+      "lbl" : "is direct form of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "relation p is the direct form of relation q iff p is a subPropertyOf q, p does not have the Transitive characteristic, q does have the Transitive characteristic, and for all x, y: x q y -> exists z1, z2, ..., zn such that x p z1 ... z2n y"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "The general property hierarchy is:\n\n  \"directly P\" SubPropertyOf \"P\"\n  Transitive(P)\n\nWhere we have an annotation assertion\n\n  \"directly P\" \"is direct form of\" \"P\""
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0002423",
+          "val" : "If we have the annotation P is-direct-form-of Q, and we have inverses P' and Q', then it follows that P' is-direct-form-of Q'"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "http://purl.obolibrary.org/obo/ro/docs/direct-and-indirect-relations/"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0040042",
       "lbl" : "is homeomorphic for",
       "type" : "PROPERTY",
@@ -3908,78 +4468,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "label"
         } ]
-      }
-    }, {
-      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000001",
-      "lbl" : "health procedure request",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A request specifying the execution of some health procedures."
-        }
-      }
-    }, {
-      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
-      "lbl" : "health procedure order",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized."
-        }
-      }
-    }, {
-      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000003",
-      "lbl" : "health procedure report",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "An information content entity containing information about some health procedure requests and possibly the associated health procedures."
-        }
-      }
-    }, {
-      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
-      "lbl" : "health procedure",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity."
-        }
-      }
-    }, {
-      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000005",
-      "lbl" : "health activity",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A planned process that aims to produce a truthful statement about the health status of an organism or modify it."
-        }
-      }
-    }, {
-      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000006",
-      "lbl" : "health procedure resulting process",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information."
-        }
-      }
-    }, {
-      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000007",
-      "lbl" : "health procedure outcome information",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure."
-        }
-      }
-    }, {
-      "id" : "http:/purl.obolibrary.org/obo/HEPRO_0000008",
-      "lbl" : "health activity outcome information",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "An information content entity that is a specified output of a health activity."
-        }
       }
     } ],
     "edges" : [ {
@@ -4123,13 +4611,97 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000034",
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000001",
       "pred" : "is_a",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000004"
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000001"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000035",
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
       "pred" : "is_a",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000004"
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
+      "pred" : "http://purl.obolibrary.org/obo/NOYO_0000008",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002018",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000007",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000008",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002352",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000008",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000009"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000011",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000081",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000012",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000013",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000014",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000005",
       "pred" : "is_a",
@@ -4363,6 +4935,50 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000422"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000049",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000050",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000050",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000050",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000013"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000051",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000052",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000049"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000052",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000050"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000053",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000049"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NOYO_0000053",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000051"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/NOYO_0000065",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/NOYO_0000011"
@@ -4403,6 +5019,14 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000061",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000062",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000061"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000204",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
@@ -4427,65 +5051,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000209"
     }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000001",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000001"
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002086"
     }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
-      "pred" : "is_a",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000001"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000001"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000002",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000004"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000003",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
-      "pred" : "http://purl.obolibrary.org/obo/NOYO_0000008",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000001"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000004",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002018",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000005"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000005",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000006",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000007",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000007",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002353",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000006"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000008",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000008",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002352",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000006"
-    }, {
-      "sub" : "http:/purl.obolibrary.org/obo/HEPRO_0000008",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002353",
-      "obj" : "http:/purl.obolibrary.org/obo/HEPRO_0000005"
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000063",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000142",
       "pred" : "subPropertyOf",
@@ -4555,9 +5127,97 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002180"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002081",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002082",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002081"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002083",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002081"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002084",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002085",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002088"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002086",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000062"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002088",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002089",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002090",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000063"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002091",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002092",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002091"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002092",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002093"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002093",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002180",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002223",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000050"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002223",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002224",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002224",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002229",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000050"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002229",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002230",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002230",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002222"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002233",
       "pred" : "subPropertyOf",
@@ -4590,6 +5250,10 @@
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000054",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000063"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000066",
       "pred" : "inverseOf",
@@ -4639,6 +5303,30 @@
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000092"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002084",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002093"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002085",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002092"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002090"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002088",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002091"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002223",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002224"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002229",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002230"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002233",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002352"
@@ -4668,8 +5356,44 @@
         "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000299",
         "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020000"
       } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/NOYO_0000052",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/NOYO_0000049", "http://purl.obolibrary.org/obo/NOYO_0000050" ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/NOYO_0000053",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/NOYO_0000049", "http://purl.obolibrary.org/obo/NOYO_0000051" ]
     } ],
     "domainRangeAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000050",
+      "allValuesFromEdges" : [ {
+        "sub" : "http://purl.obolibrary.org/obo/BFO_0000002",
+        "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "obj" : "http://purl.obolibrary.org/obo/BFO_0000002"
+      }, {
+        "sub" : "http://purl.obolibrary.org/obo/BFO_0000003",
+        "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "obj" : "http://purl.obolibrary.org/obo/BFO_0000003"
+      }, {
+        "sub" : "http://purl.obolibrary.org/obo/BFO_0000004",
+        "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
+        "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
+      } ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000055",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000063",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000066",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/IAO_0000136",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000030" ]
     }, {
@@ -4692,10 +5416,47 @@
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ]
     }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000085",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0000091",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002018",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002091",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002222",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002233",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002479",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000003" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000004" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000054",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000312",
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
     } ],
     "propertyChainAxioms" : [ {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000050", "http://purl.obolibrary.org/obo/BFO_0000062" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000063",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000050", "http://purl.obolibrary.org/obo/BFO_0000063" ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000066",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000050", "http://purl.obolibrary.org/obo/BFO_0000066" ]
     }, {
@@ -4710,6 +5471,30 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000066",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000066", "http://purl.obolibrary.org/obo/BFO_0000050" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002091", "http://purl.obolibrary.org/obo/BFO_0000062" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000062",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002092", "http://purl.obolibrary.org/obo/BFO_0000062" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000063",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002092", "http://purl.obolibrary.org/obo/BFO_0000063" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002086",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002093", "http://purl.obolibrary.org/obo/BFO_0000062" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002224", "http://purl.obolibrary.org/obo/RO_0002230" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002233",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002224", "http://purl.obolibrary.org/obo/RO_0002233" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002090",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002230", "http://purl.obolibrary.org/obo/RO_0002224" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002234",
+      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002230", "http://purl.obolibrary.org/obo/RO_0002234" ]
     } ]
   } ]
 }
