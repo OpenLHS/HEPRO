@@ -1,25 +1,27 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl#"
      xml:base="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:HEPRO="http://purl.obolibrary.org/obo/HEPRO#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-05/HEPRO-base.owl"/>
-        <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
-        <dc:contributor xml:lang="en">François Goyer</dc:contributor>
-        <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
-        <dc:contributor xml:lang="en">Paul Fabry</dc:contributor>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:description xml:lang="en">Ontology of health procedure related entities</terms:description>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:title>HEalth PRocedure Ontology</terms:title>
-        <owl:versionInfo>2023-05-05</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-05/HEPRO-base.owl"/>
+        <dce:contributor xml:lang="en">Adrien Barton</dce:contributor>
+        <dce:contributor xml:lang="en">François Goyer</dce:contributor>
+        <dce:contributor xml:lang="en">Jean-François Ethier</dce:contributor>
+        <dce:contributor xml:lang="en">Paul Fabry</dce:contributor>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description xml:lang="en">Ontology of health procedure related entities</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:title>HEalth PRocedure Ontology</dcterms:title>
+        <owl:versionInfo>2023-06-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -44,6 +46,15 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO#HEPRO-H -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H">
+        <rdfs:label xml:lang="en">HEPRO-H</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -83,6 +94,18 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -106,9 +129,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NOYO_0000008 -->
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000004 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/NOYO_0000008"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"/>
     
 
 
@@ -162,8 +185,9 @@
     <!-- http://purl.obolibrary.org/obo/HEPRO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000027"/>
         <obo:IAO_0000115 xml:lang="en">A request specifying the execution of some health procedures.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure request</rdfs:label>
     </owl:Class>
     
@@ -186,6 +210,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure order</rdfs:label>
     </owl:Class>
     
@@ -196,6 +221,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity containing information about some health procedure requests and possibly the associated health procedures.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure report</rdfs:label>
     </owl:Class>
     
@@ -207,7 +233,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/NOYO_0000008"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -218,6 +244,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure</rdfs:label>
     </owl:Class>
     
@@ -228,6 +255,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A planned process that aims to produce a truthful statement about the health status of an organism or modify it.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health activity</rdfs:label>
     </owl:Class>
     
@@ -238,6 +266,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure resulting process</rdfs:label>
     </owl:Class>
     
@@ -254,6 +283,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure outcome information</rdfs:label>
     </owl:Class>
     
@@ -276,6 +306,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is a specified output of a health activity.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health activity outcome information</rdfs:label>
     </owl:Class>
     
@@ -293,6 +324,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An individual identifier that denotes a health provider.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health provider identifier</rdfs:label>
     </owl:Class>
     
@@ -303,6 +335,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000009"/>
         <obo:IAO_0000115 xml:lang="en">A health provider identifier that is used to denote a person authorised to act as a physician.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">physician identifier</rdfs:label>
     </owl:Class>
     
@@ -321,6 +354,7 @@
         <obo:IAO_0000115 xml:lang="en">A role that inheres in an organism as a consequence of training in order to be able to participate as a performer in some health activities.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">This usually includes health professional like physicians, nurses or pharmacists etc.
 It could also includes non professionals like patient attendant but it would exclude others like secretaries or accountants.</obo:IAO_0000600>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health provider role</rdfs:label>
     </owl:Class>
     
@@ -337,6 +371,7 @@ It could also includes non professionals like patient attendant but it would exc
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An organism that is the bearer of a health provider role.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health provider</rdfs:label>
     </owl:Class>
     
@@ -347,6 +382,7 @@ It could also includes non professionals like patient attendant but it would exc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000004"/>
         <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">diagnostic health procedure</rdfs:label>
     </owl:Class>
     
@@ -357,6 +393,7 @@ It could also includes non professionals like patient attendant but it would exc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000004"/>
         <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">surgical health procedure</rdfs:label>
     </owl:Class>
     
@@ -374,12 +411,6 @@ It could also includes non professionals like patient attendant but it would exc
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NOYO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NOYO_0000001"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -389,6 +420,12 @@ It could also includes non professionals like patient attendant but it would exc
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000027"/>
 </rdf:RDF>
 
 

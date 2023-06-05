@@ -13,9 +13,12 @@ export_formats:
   - json
 import_group:
   products:
-    - id: noyo
+    - id: IOIO
       module_type: mirror
-      mirror_from: "https://raw.githubusercontent.com/OpenLHS/NOYO/main/NOYO-full.owl"
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/IOIO/main/IOIO.owl"
+subset_group:
+  products:
+    - id: HEPRO-H
 robot_report:
   custom_sparql_exports:
     - base-classes-report
