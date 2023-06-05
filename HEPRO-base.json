@@ -28,9 +28,9 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-05"
+        "val" : "2023-06-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-05-05/HEPRO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-05/HEPRO-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000001",
@@ -39,7 +39,8 @@
       "meta" : {
         "definition" : {
           "val" : "A request specifying the execution of some health procedures."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
@@ -48,7 +49,8 @@
       "meta" : {
         "definition" : {
           "val" : "A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000003",
@@ -57,7 +59,8 @@
       "meta" : {
         "definition" : {
           "val" : "An information content entity containing information about some health procedure requests and possibly the associated health procedures."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
@@ -66,7 +69,8 @@
       "meta" : {
         "definition" : {
           "val" : "A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000005",
@@ -75,7 +79,8 @@
       "meta" : {
         "definition" : {
           "val" : "A planned process that aims to produce a truthful statement about the health status of an organism or modify it."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000006",
@@ -84,7 +89,8 @@
       "meta" : {
         "definition" : {
           "val" : "A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000007",
@@ -93,7 +99,8 @@
       "meta" : {
         "definition" : {
           "val" : "An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000008",
@@ -102,7 +109,8 @@
       "meta" : {
         "definition" : {
           "val" : "An information content entity that is a specified output of a health activity."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000009",
@@ -111,7 +119,8 @@
       "meta" : {
         "definition" : {
           "val" : "An individual identifier that denotes a health provider."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000010",
@@ -120,7 +129,8 @@
       "meta" : {
         "definition" : {
           "val" : "A health provider identifier that is used to denote a person authorised to act as a physician."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000011",
@@ -130,6 +140,7 @@
         "definition" : {
           "val" : "A role that inheres in an organism as a consequence of training in order to be able to participate as a performer in some health activities."
         },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "This usually includes health professional like physicians, nurses or pharmacists etc.\nIt could also includes non professionals like patient attendant but it would exclude others like secretaries or accountants."
@@ -142,7 +153,8 @@
       "meta" : {
         "definition" : {
           "val" : "An organism that is the bearer of a health provider role."
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000013",
@@ -151,7 +163,8 @@
       "meta" : {
         "definition" : {
           "val" : "TBD"
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000014",
@@ -160,8 +173,13 @@
       "meta" : {
         "definition" : {
           "val" : "TBD"
-        }
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H",
+      "lbl" : "HEPRO-H",
+      "type" : "PROPERTY"
     }, {
       "id" : "http://purl.org/dc/terms/description",
       "lbl" : "description",
@@ -178,7 +196,7 @@
     "edges" : [ {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000001",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/NOYO_0000001"
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000027"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
       "pred" : "is_a",
@@ -201,7 +219,7 @@
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
-      "pred" : "http://purl.obolibrary.org/obo/NOYO_0000008",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000004",
       "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000001"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
