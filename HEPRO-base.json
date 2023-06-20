@@ -28,9 +28,9 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-06-05"
+        "val" : "2023-06-20"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-05/HEPRO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-20/HEPRO-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000001",
@@ -177,6 +177,42 @@
         "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000015",
+      "lbl" : "health procedure sub-group name",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "'curative procedures'\n'Surgeries performed on June, 19th 2023 at Velpeau Hospital'"
+        }, {
+          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+          "val" : "An information content entity that is about a sub-group of health procedures."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000016",
+      "lbl" : "health activity sub-group name",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "'laboratory test'"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "An information content entity that is about a sub-group of health activities."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000017",
+      "lbl" : "pathological condition sub-group name",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+          "val" : "An information content entity that is about a sub-group of pathological conditions."
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H",
       "lbl" : "HEPRO-H",
       "type" : "PROPERTY"
@@ -285,6 +321,26 @@
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000014",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000015",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000015",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000016",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000016",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
     } ]
   } ]
 }

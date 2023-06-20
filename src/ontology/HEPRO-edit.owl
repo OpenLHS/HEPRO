@@ -9,7 +9,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HEPRO.owl>
-Import(<http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-05/imports/IOIO_import.owl>)
+Import(<http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-20/imports/IOIO_import.owl>)
 Annotation(dce:contributor "Adrien Barton"@en)
 Annotation(dce:contributor "François Goyer"@en)
 Annotation(dce:contributor "Jean-François Ethier"@en)
@@ -32,6 +32,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000017>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/HEPRO#HEPRO-H>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -173,6 +176,29 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HEPRO_0000014> <http://purl.obolibrary.org/obo/HEPRO#HEPRO-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000014> "surgical health procedure"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000014> <http://purl.obolibrary.org/obo/HEPRO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000015> (health procedure sub-group name)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/HEPRO_0000015> "'curative procedures'
+'Surgeries performed on June, 19th 2023 at Velpeau Hospital'"@en)
+AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/HEPRO_0000015> "An information content entity that is about a sub-group of health procedures."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000015> "health procedure sub-group name"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000015> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/HEPRO_0000004>))
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000016> (health activity sub-group name)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/HEPRO_0000016> "'laboratory test'"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/HEPRO_0000016> "An information content entity that is about a sub-group of health activities."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000016> "health activity sub-group name"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000016> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/HEPRO_0000005>))
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000017> (pathological condition sub-group name)
+
+AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/HEPRO_0000017> "An information content entity that is about a sub-group of pathological conditions."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000017> "pathological condition sub-group name"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000017> <http://purl.obolibrary.org/obo/IAO_0000030>)
 
 
 )

@@ -10,9 +10,10 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:HEPRO="http://purl.obolibrary.org/obo/HEPRO#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-05/HEPRO-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-20/HEPRO-base.owl"/>
         <dce:contributor xml:lang="en">Adrien Barton</dce:contributor>
         <dce:contributor xml:lang="en">François Goyer</dce:contributor>
         <dce:contributor xml:lang="en">Jean-François Ethier</dce:contributor>
@@ -21,7 +22,7 @@
         <dcterms:description xml:lang="en">Ontology of health procedure related entities</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>HEalth PRocedure Ontology</dcterms:title>
-        <owl:versionInfo>2023-06-05</owl:versionInfo>
+        <owl:versionInfo>2023-06-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -37,9 +38,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     
 
 
@@ -103,6 +116,12 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
     
 
 
@@ -395,6 +414,51 @@ It could also includes non professionals like patient attendant but it would exc
         <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">surgical health procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">&apos;curative procedures&apos;
+&apos;Surgeries performed on June, 19th 2023 at Velpeau Hospital&apos;</obo:IAO_0000112>
+        <CommonCoreOntologies:definition xml:lang="en">An information content entity that is about a sub-group of health procedures.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">health procedure sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">&apos;laboratory test&apos;</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">An information content entity that is about a sub-group of health activities.</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">health activity sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <CommonCoreOntologies:definition xml:lang="en">An information content entity that is about a sub-group of pathological conditions.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">pathological condition sub-group name</rdfs:label>
     </owl:Class>
     
 
