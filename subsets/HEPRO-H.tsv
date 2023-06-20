@@ -1,6 +1,6 @@
 ?x	?label
-_:B312298b8X2D427cX2D435cX2D84fdX2D2c30cbc0a07cgenid105	
-_:B312298b8X2D427cX2D435cX2D84fdX2D2c30cbc0a07cgenid96	
+_:B7f1c1320X2De0d5X2D4c19X2Da6e8X2D404ef922c854genid102	
+_:B7f1c1320X2De0d5X2D4c19X2Da6e8X2D404ef922c854genid93	
 <http://purl.obolibrary.org/obo/BFO_0000001>	"entity"
 <http://purl.obolibrary.org/obo/BFO_0000002>	"continuant"
 <http://purl.obolibrary.org/obo/BFO_0000003>	"occurrent"
@@ -26,7 +26,6 @@ _:B312298b8X2D427cX2D435cX2D84fdX2D2c30cbc0a07cgenid96
 <http://purl.obolibrary.org/obo/HEPRO_0000013>	"diagnostic health procedure"
 <http://purl.obolibrary.org/obo/HEPRO_0000014>	"surgical health procedure"
 <http://purl.obolibrary.org/obo/IAO_0000030>	"information content entity"
-<http://purl.obolibrary.org/obo/IAO_0000033>	"directive information entity"
 <http://purl.obolibrary.org/obo/IAO_0020000>	"identifier"
 <http://purl.obolibrary.org/obo/IAO_0020010>	"identifier creating process"
 <http://purl.obolibrary.org/obo/OBI_0000011>	"planned process"
