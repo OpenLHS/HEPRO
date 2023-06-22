@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/HEPRO-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-20/HEPRO-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-22/HEPRO-base.owl"/>
         <dce:contributor xml:lang="en">Adrien Barton</dce:contributor>
         <dce:contributor xml:lang="en">François Goyer</dce:contributor>
         <dce:contributor xml:lang="en">Jean-François Ethier</dce:contributor>
@@ -22,7 +22,7 @@
         <dcterms:description xml:lang="en">Ontology of health procedure related entities</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title>HEalth PRocedure Ontology</dcterms:title>
-        <owl:versionInfo>2023-06-20</owl:versionInfo>
+        <owl:versionInfo>2023-06-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -431,6 +431,7 @@ It could also includes non professionals like patient attendant but it would exc
         <obo:IAO_0000112 xml:lang="en">&apos;curative procedures&apos;
 &apos;Surgeries performed on June, 19th 2023 at Velpeau Hospital&apos;</obo:IAO_0000112>
         <CommonCoreOntologies:definition xml:lang="en">An information content entity that is about a sub-group of health procedures.</CommonCoreOntologies:definition>
+        <rdfs:comment xml:lang="en">We suppose that if an ICE is about a group of particular entities, it is also about each of these entities.</rdfs:comment>
         <rdfs:label xml:lang="en">health procedure sub-group name</rdfs:label>
     </owl:Class>
     
@@ -448,6 +449,7 @@ It could also includes non professionals like patient attendant but it would exc
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">&apos;laboratory test&apos;</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">An information content entity that is about a sub-group of health activities.</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">We suppose that if an ICE is about a group of particular entities, it is also about each of these entities.</rdfs:comment>
         <rdfs:label xml:lang="en">health activity sub-group name</rdfs:label>
     </owl:Class>
     
@@ -457,8 +459,79 @@ It could also includes non professionals like patient attendant but it would exc
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <CommonCoreOntologies:definition xml:lang="en">An information content entity that is about a sub-group of pathological conditions.</CommonCoreOntologies:definition>
+        <rdfs:comment xml:lang="en">We suppose that if an ICE is about a group of particular entities, it is also about each of these entities.</rdfs:comment>
         <rdfs:label xml:lang="en">pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition xml:lang="en">A process beginning characterization that characterizes the beginning of a health procedure.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">health procedure start characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition xml:lang="en">A process beginning characterization that characterizes the end of a health procedure.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">health procedure stop characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition xml:lang="en">A process beginning characterization that characterizes the beginning of a health activity.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">health activity start characterization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <CommonCoreOntologies:definition xml:lang="en">A process beginning characterization that characterizes the end of a health activity.</CommonCoreOntologies:definition>
+        <rdfs:label xml:lang="en">health activity stop characterization</rdfs:label>
     </owl:Class>
     
 
@@ -490,6 +563,24 @@ It could also includes non professionals like patient attendant but it would exc
     <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000060"/>
 </rdf:RDF>
 
 

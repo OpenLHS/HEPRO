@@ -28,9 +28,9 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-06-20"
+        "val" : "2023-06-22"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-20/HEPRO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-22/HEPRO-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000001",
@@ -181,6 +181,7 @@
       "lbl" : "health procedure sub-group name",
       "type" : "CLASS",
       "meta" : {
+        "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "'curative procedures'\n'Surgeries performed on June, 19th 2023 at Velpeau Hospital'"
@@ -194,6 +195,7 @@
       "lbl" : "health activity sub-group name",
       "type" : "CLASS",
       "meta" : {
+        "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "'laboratory test'"
@@ -207,9 +209,50 @@
       "lbl" : "pathological condition sub-group name",
       "type" : "CLASS",
       "meta" : {
+        "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
           "val" : "An information content entity that is about a sub-group of pathological conditions."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000020",
+      "lbl" : "health procedure start characterization",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+          "val" : "A process beginning characterization that characterizes the beginning of a health procedure."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000021",
+      "lbl" : "health procedure stop characterization",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+          "val" : "A process beginning characterization that characterizes the end of a health procedure."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000022",
+      "lbl" : "health activity start characterization",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+          "val" : "A process beginning characterization that characterizes the beginning of a health activity."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000023",
+      "lbl" : "health activity stop characterization",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
+          "val" : "A process beginning characterization that characterizes the end of a health activity."
         } ]
       }
     }, {
@@ -341,6 +384,42 @@
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000017",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000017",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000060"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000020",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000020",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000021",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000022",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000033"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000022",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000023",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000034"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000023",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
     } ]
   } ]
 }

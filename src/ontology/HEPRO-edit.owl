@@ -9,7 +9,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HEPRO.owl>
-Import(<http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-20/imports/IOIO_import.owl>)
+Import(<http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-22/imports/IOIO_import.owl>)
 Annotation(dce:contributor "Adrien Barton"@en)
 Annotation(dce:contributor "François Goyer"@en)
 Annotation(dce:contributor "Jean-François Ethier"@en)
@@ -35,6 +35,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HEPRO_0000023>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/HEPRO#HEPRO-H>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -182,6 +186,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000014> <http://purl.obolibrar
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/HEPRO_0000015> "'curative procedures'
 'Surgeries performed on June, 19th 2023 at Velpeau Hospital'"@en)
 AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/HEPRO_0000015> "An information content entity that is about a sub-group of health procedures."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/HEPRO_0000015> "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000015> "health procedure sub-group name"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000015> <http://purl.obolibrary.org/obo/IAO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/HEPRO_0000004>))
@@ -190,6 +195,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000015> ObjectSomeValuesFrom(<
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/HEPRO_0000016> "'laboratory test'"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/HEPRO_0000016> "An information content entity that is about a sub-group of health activities."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/HEPRO_0000016> "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000016> "health activity sub-group name"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000016> <http://purl.obolibrary.org/obo/IAO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/HEPRO_0000005>))
@@ -197,8 +203,38 @@ SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000016> ObjectSomeValuesFrom(<
 # Class: <http://purl.obolibrary.org/obo/HEPRO_0000017> (pathological condition sub-group name)
 
 AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/HEPRO_0000017> "An information content entity that is about a sub-group of pathological conditions."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/HEPRO_0000017> "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000017> "pathological condition sub-group name"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000017> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000060>))
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000020> (health procedure start characterization)
+
+AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/HEPRO_0000020> "A process beginning characterization that characterizes the beginning of a health procedure."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000020> "health procedure start characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000020> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000033>)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/HEPRO_0000004>))
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000021> (health procedure stop characterization)
+
+AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/HEPRO_0000021> "A process beginning characterization that characterizes the end of a health procedure."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000021> "health procedure stop characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000021> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000034>)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000021> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/HEPRO_0000004>))
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000022> (health activity start characterization)
+
+AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/HEPRO_0000022> "A process beginning characterization that characterizes the beginning of a health activity."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000022> "health activity start characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000022> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000033>)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/HEPRO_0000005>))
+
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000023> (health activity stop characterization)
+
+AnnotationAssertion(<http://www.ontologyrepository.com/CommonCoreOntologies/definition> <http://purl.obolibrary.org/obo/HEPRO_0000023> "A process beginning characterization that characterizes the end of a health activity."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HEPRO_0000023> "health activity stop characterization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000023> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000034>)
+SubClassOf(<http://purl.obolibrary.org/obo/HEPRO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/HEPRO_0000005>))
 
 
 )
