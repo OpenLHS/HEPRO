@@ -18,8 +18,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/subsets/HEPRO-H.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-22/subsets/HEPRO-H.owl"/>
-        <owl:versionInfo>2023-06-22</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-18/subsets/HEPRO-H.owl"/>
+        <owl:versionInfo>2023-07-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -183,6 +183,55 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000">
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">has axiom label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000061 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000061">
+        <obo:OpenLHS-Core_0000062 xml:lang="en">Necessary condition that is definitional, that is the notion to be defined does not appear in the condition.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">definitional necessary condition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000061"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedTarget xml:lang="en">Necessary condition that is definitional, that is the notion to be defined does not appear in the condition.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">If we know several necessary conditions associated with an entity, we write as definitional necessary condition the conjunction of them.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000062 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062">
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">definitional necessary and sufficient condition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedTarget xml:lang="en">A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">If we know several necessary and sufficient conditions associated with an entity, we write as definitional necessary and sufficient condition the disjunction of them, and as definitional necessary condition the conjunction of them.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000063 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000063">
+        <obo:IAO_0000600 xml:lang="en">Human-readable necessary membership condition(s) of a class or a property.</obo:IAO_0000600>
+        <rdfs:comment xml:lang="en">We introduce &apos;necessary conditions&apos; rather than &apos;necessary condition&apos; to avoid the multiplication of annotations.</rdfs:comment>
+        <rdfs:label xml:lang="en">necessary conditions</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000064 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000064">
+        <obo:IAO_0000600 xml:lang="en">Human-readable necessary and sufficient membership condition of a class or a property.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">necessary and sufficient condition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -776,25 +825,10 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000001">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000008"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <obo:IAO_0000600 xml:lang="en">A relation that holds between a filler and a slot it fills.</obo:IAO_0000600>
         <rdfs:label xml:lang="en">fills</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000002 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000002">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000005"/>
-        <rdfs:label xml:lang="en">is characterized by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000003 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000003">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000002"/>
-        <rdfs:label xml:lang="en">is temporally characterized by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -803,6 +837,9 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000007"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">The inverse relations of directs</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">is directed by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -812,8 +849,9 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000005">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-        <obo:IAO_0000115 xml:lang="en">A characterizes B means that A is about a SDC inhering in B.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">characterizes</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A is about an aspect of B := A is about a specifically dependent continuant that inheres in B.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">is about an aspect of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -821,16 +859,76 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000007 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000007">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A directs B := A is a directive information entity that guides an agent in the execution of B.</obo:OpenLHS-Core_0000061>
         <rdfs:label xml:lang="en">directs</rdfs:label>
     </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000061"/>
+        <owl:annotatedTarget xml:lang="en">A directs B := A is a directive information entity that guides an agent in the execution of B.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">This includes failed attempts where B is not compliant to A.</rdfs:comment>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000008 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000008">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">The inverse relation of fills</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">is filled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000066 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000066">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000007"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A maximally directs B := A directs B, and B is compliant to A.</obo:OpenLHS-Core_0000061>
+        <rdfs:comment xml:lang="en">Discussed in: Adrien Barton, Laure Vieu, Jean-François Ethier. Directing Actions. Workshop on Foundational Ontology (FOUST III), Joint Ontology Workshops (JOWO 2019), Sep 2019, Graz, Austria.</rdfs:comment>
+        <rdfs:label xml:lang="en">maximally directs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000067 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000067">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">The inverse relation of maximally directs.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">is maximally directed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000070 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">The inverse relation of has component.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">component of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000071 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000071">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">The inverse relation of has component process.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">component process of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1486,7 +1584,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
         <owl:inverseOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_agent"/>
-        <CommonCoreOntologies:definition xml:lang="en">x agent_in y iff y is an instance of Process and x is an instance of Agent, such that x is causally active in y.</CommonCoreOntologies:definition>
+        <obo:IAO_0000115 xml:lang="en">x agent_in y iff y is an instance of Process and x is an instance of Agent, such that x is causally active in y.</obo:IAO_0000115>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label xml:lang="en">agent in</rdfs:label>
     </owl:ObjectProperty>
@@ -1497,7 +1595,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_agent">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <CommonCoreOntologies:definition xml:lang="en">x has_agent y iff x is an instance of Process and y is an instance of Agent, such that y is causally active in x.</CommonCoreOntologies:definition>
+        <obo:IAO_0000115 xml:lang="en">x has_agent y iff x is an instance of Process and y is an instance of Agent, such that y is causally active in x.</obo:IAO_0000115>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label xml:lang="en">has agent</rdfs:label>
     </owl:ObjectProperty>
@@ -1508,7 +1606,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_capability">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-        <CommonCoreOntologies:definition xml:lang="en">x has_capability y iff x is an instance of Agent and y is an instance of Agent Capability, such that x bearer of y.</CommonCoreOntologies:definition>
+        <obo:IAO_0000115 xml:lang="en">x has_capability y iff x is an instance of Agent and y is an instance of Agent Capability, such that x bearer of y.</obo:IAO_0000115>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label xml:lang="en">has capability</rdfs:label>
     </owl:ObjectProperty>
@@ -2026,32 +2124,16 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000027"/>
-        <obo:IAO_0000115 xml:lang="en">A request specifying the execution of some health procedures.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A request that has as part a health procedure specification.</obo:OpenLHS-Core_0000061>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A request requesting the execution of some health procedure.</obo:OpenLHS-Core_0000062>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure request</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/HEPRO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
-        <rdfs:label xml:lang="en">health procedure order</rdfs:label>
     </owl:Class>
     
 
@@ -2070,11 +2152,22 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/HEPRO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000067"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000067"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2083,7 +2176,10 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A planned process that has some components that are planned processes, including at least one that is a health activity.</obo:OpenLHS-Core_0000061>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">- A planned process that is maximally directed by a health procedure specification.
+
+ - A planned process that is guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury.</obo:OpenLHS-Core_0000062>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure</rdfs:label>
     </owl:Class>
@@ -2094,7 +2190,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process that aims to produce a truthful statement about the health status of an organism or modify it.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A planned process that aims to produce a truthful statement about the health status of an organism or modify it.</obo:OpenLHS-Core_0000061>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health activity</rdfs:label>
     </owl:Class>
@@ -2105,6 +2201,12 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health procedure resulting process</rdfs:label>
@@ -2118,7 +2220,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2135,17 +2237,11 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002352"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is a specified output of a health activity.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">An information content entity that is a specified output of a health activity.</obo:OpenLHS-Core_0000061>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">health activity outcome information</rdfs:label>
     </owl:Class>
@@ -2235,6 +2331,16 @@ It could also includes non professionals like patient attendant but it would exc
         <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
         <rdfs:label xml:lang="en">surgical health procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A directive information entity that aims to direct a health procedure.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">health procedure specification</rdfs:label>
     </owl:Class>
     
 
@@ -2512,9 +2618,16 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity representing the will of a person to have something done and specifications for the latter.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">An information content entity representing the will of a person to have something done and that includes specifications for the latter.</obo:OpenLHS-Core_0000061>
+        <rdfs:comment xml:lang="en">It is an open question whether the mereological sum of a request with any other ICE is also a request</rdfs:comment>
         <rdfs:label xml:lang="en">request</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000027"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget xml:lang="en">It is an open question whether the mereological sum of a request with any other ICE is also a request</owl:annotatedTarget>
+        <obo:IAO_0000116 xml:lang="en">hence the definitional necessary condition.</obo:IAO_0000116>
+    </owl:Axiom>
     
 
 
