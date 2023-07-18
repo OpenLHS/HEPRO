@@ -1,6 +1,7 @@
 ?x	?label
-_:Ba9fa3d24X2Dd9b1X2D4f82X2Db0f9X2Dd984dee84b2agenid91	
-_:Ba9fa3d24X2Dd9b1X2D4f82X2Db0f9X2Dd984dee84b2agenid99	
+_:B3efe0a5bX2D963dX2D403cX2Db8d0X2D1e3b85e46f3egenid105	
+_:B3efe0a5bX2D963dX2D403cX2Db8d0X2D1e3b85e46f3egenid81	
+_:B3efe0a5bX2D963dX2D403cX2Db8d0X2D1e3b85e46f3egenid97	
 <http://purl.obolibrary.org/obo/BFO_0000001>	"entity"
 <http://purl.obolibrary.org/obo/BFO_0000002>	"continuant"
 <http://purl.obolibrary.org/obo/BFO_0000003>	"occurrent"
@@ -12,7 +13,6 @@ _:Ba9fa3d24X2Dd9b1X2D4f82X2Db0f9X2Dd984dee84b2agenid99
 <http://purl.obolibrary.org/obo/BFO_0000031>	"generically dependent continuant"
 <http://purl.obolibrary.org/obo/BFO_0000040>	"material entity"
 <http://purl.obolibrary.org/obo/HEPRO_0000001>	"health procedure request"
-<http://purl.obolibrary.org/obo/HEPRO_0000002>	"health procedure order"
 <http://purl.obolibrary.org/obo/HEPRO_0000003>	"health procedure report"
 <http://purl.obolibrary.org/obo/HEPRO_0000004>	"health procedure"
 <http://purl.obolibrary.org/obo/HEPRO_0000005>	"health activity"
@@ -25,6 +25,7 @@ _:Ba9fa3d24X2Dd9b1X2D4f82X2Db0f9X2Dd984dee84b2agenid99
 <http://purl.obolibrary.org/obo/HEPRO_0000012>	"health provider"
 <http://purl.obolibrary.org/obo/HEPRO_0000013>	"diagnostic health procedure"
 <http://purl.obolibrary.org/obo/HEPRO_0000014>	"surgical health procedure"
+<http://purl.obolibrary.org/obo/HEPRO_0000030>	"health procedure specification"
 <http://purl.obolibrary.org/obo/IAO_0000005>	"objective specification"
 <http://purl.obolibrary.org/obo/IAO_0000007>	"action specification"
 <http://purl.obolibrary.org/obo/IAO_0000030>	"information content entity"

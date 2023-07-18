@@ -28,29 +28,23 @@
         "val" : "HEalth PRocedure Ontology"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-06-22"
+        "val" : "2023-07-18"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-22/HEPRO-base.json"
+      "version" : "http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-18/HEPRO-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000001",
       "lbl" : "health procedure request",
       "type" : "CLASS",
       "meta" : {
-        "definition" : {
-          "val" : "A request specifying the execution of some health procedures."
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
-      "lbl" : "health procedure order",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A health procedure request  that is the output of a service agreement made between a request party and a service offer party and that specifies some health procedures to be realized."
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
+          "val" : "A request that has as part a health procedure specification."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A request requesting the execution of some health procedure."
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000003",
@@ -67,20 +61,25 @@
       "lbl" : "health procedure",
       "type" : "CLASS",
       "meta" : {
-        "definition" : {
-          "val" : "A planned process guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury. It has some components that are planned processes, including at least one that is a health activity."
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
+          "val" : "A planned process that has some components that are planned processes, including at least one that is a health activity."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "- A planned process that is maximally directed by a health procedure specification.\n\n - A planned process that is guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury."
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000005",
       "lbl" : "health activity",
       "type" : "CLASS",
       "meta" : {
-        "definition" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "A planned process that aims to produce a truthful statement about the health status of an organism or modify it."
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000006",
@@ -107,10 +106,11 @@
       "lbl" : "health activity outcome information",
       "type" : "CLASS",
       "meta" : {
-        "definition" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
           "val" : "An information content entity that is a specified output of a health activity."
-        },
-        "subsets" : [ "http://purl.obolibrary.org/obo/HEPRO#HEPRO-H" ]
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000009",
@@ -217,42 +217,65 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000020",
-      "lbl" : "health procedure start characterization",
+      "lbl" : "health procedure beginning statement",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
-          "val" : "A process beginning characterization that characterizes the beginning of a health procedure."
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A process beginning statement that temporally qualifies the beginning of a health procedure."
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000021",
-      "lbl" : "health procedure stop characterization",
+      "lbl" : "health procedure ending statement",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
-          "val" : "A process beginning characterization that characterizes the end of a health procedure."
+          "val" : "A process ending statement that temporally qualifies the end of a health procedure."
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000022",
-      "lbl" : "health activity start characterization",
+      "lbl" : "health activity beginning statement",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
-          "val" : "A process beginning characterization that characterizes the beginning of a health activity."
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A process beginning statement that temporally qualifies the beginning of a health activity."
         } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/HEPRO_0000023",
-      "lbl" : "health activity stop characterization",
+      "lbl" : "health activity ending statement",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://www.ontologyrepository.com/CommonCoreOntologies/definition",
-          "val" : "A process beginning characterization that characterizes the end of a health activity."
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A process ending statement that temporally qualifies the end of a health activity."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000025",
+      "lbl" : "health procedure agreement specification",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
+          "val" : "A service agreement specification that has as part a health procedure specification."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A service agreement specification that aims to direct some health procedure."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000030",
+      "lbl" : "health procedure specification",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A directive information entity that aims to direct a health procedure."
         } ]
       }
     }, {
@@ -277,29 +300,13 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000027"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000001"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000001"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000002",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000004"
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000001",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000030"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000003",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
-      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000004",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000001"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002018",
@@ -313,12 +320,16 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000006",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0000293",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000008"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000007",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000007",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0000312",
       "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000006"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000008",
@@ -326,11 +337,7 @@
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000008",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002352",
-      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000006"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000008",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002353",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0000312",
       "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000009",
@@ -420,6 +427,26 @@
       "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000023",
       "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
       "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000025",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000028"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000025",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000033"
+    } ],
+    "logicalDefinitionAxioms" : [ {
+      "definedClassId" : "http://purl.obolibrary.org/obo/HEPRO_0000004",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000067",
+        "fillerId" : "http://purl.obolibrary.org/obo/HEPRO_0000030"
+      } ]
     } ]
   } ]
 }
