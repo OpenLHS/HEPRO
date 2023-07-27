@@ -18,8 +18,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/subsets/HEPRO-H.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-18/subsets/HEPRO-H.owl"/>
-        <owl:versionInfo>2023-07-18</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-27/subsets/HEPRO-H.owl"/>
+        <owl:versionInfo>2023-07-27</owl:versionInfo>
     </owl:Ontology>
     
 
