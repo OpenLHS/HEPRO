@@ -405,12 +405,6 @@
     
 
 
-    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/definition -->
-
-    <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/definition"/>
-    
-
-
     <!-- http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology -->
 
     <owl:AnnotationProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology"/>

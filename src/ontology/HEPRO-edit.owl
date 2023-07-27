@@ -9,7 +9,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HEPRO.owl>
-Import(<http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-05/imports/IOIO_import.owl>)
+Import(<http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-27/imports/IOIO_import.owl>)
 Annotation(dce:contributor "Adrien Barton"@en)
 Annotation(dce:contributor "François Goyer"@en)
 Annotation(dce:contributor "Jean-François Ethier"@en)
