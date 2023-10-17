@@ -16,7 +16,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-10-11/imports/IOIO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-10-17/imports/IOIO_import.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">François Goyer</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
