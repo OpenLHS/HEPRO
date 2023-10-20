@@ -1,25 +1,24 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/HEPRO/subsets/HEPRO-H.owl#"
-     xml:base="http://purl.obolibrary.org/obo/HEPRO/subsets/HEPRO-H.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/HEPRO/subsets/OpenLHS-H.owl#"
+     xml:base="http://purl.obolibrary.org/obo/HEPRO/subsets/OpenLHS-H.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:IOIO="http://purl.obolibrary.org/obo/IOIO#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:HEPRO="http://purl.obolibrary.org/obo/HEPRO#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:OpenLHS-Core="http://purl.obolibrary.org/obo/OpenLHS-Core#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/subsets/HEPRO-H.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-10-17/subsets/HEPRO-H.owl"/>
-        <owl:versionInfo>2023-10-17</owl:versionInfo>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/subsets/OpenLHS-H.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2023-10-20/subsets/OpenLHS-H.owl"/>
+        <owl:versionInfo>2023-10-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -296,20 +295,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HEPRO#HEPRO-H -->
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H">
-        <rdfs:label xml:lang="en">HEPRO-H</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IOIO#IOIO-H -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IOIO#IOIO-H">
-        <rdfs:comment xml:lang="en">IOIO classes relevent to humans.</rdfs:comment>
-        <rdfs:label xml:lang="en">IOIO-H</rdfs:label>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H">
+        <rdfs:comment xml:lang="en">OpenLHS classes relevant to humans.</rdfs:comment>
+        <rdfs:label xml:lang="en">OpenLHS-H</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -1610,6 +1600,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/has_capability">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:domain rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Agent"/>
         <obo:IAO_0000115 xml:lang="en">x has_capability y iff x is an instance of Agent and y is an instance of Agent Capability, such that x bearer of y.</obo:IAO_0000115>
         <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
         <rdfs:label xml:lang="en">has capability</rdfs:label>
@@ -1923,6 +1914,69 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:BFO_0000179>t-region</obo:BFO_0000179>
+        <obo:BFO_0000180>TemporalRegion</obo:BFO_0000180>
+        <obo:IAO_0000116 xml:lang="en">Temporal region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn&apos;t overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">temporal region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
+        <owl:annotatedTarget xml:lang="en">Temporal region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn&apos;t overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000003"/>
+        <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/100-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/101-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/119-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/119-002"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/101-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/100-001"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
@@ -2193,7 +2247,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A request requesting the execution of some health procedure.</obo:IAO_0000115>
         <obo:OpenLHS-Core_0000061 xml:lang="en">A request that has as part a health procedure specification.</obo:OpenLHS-Core_0000061>
         <obo:OpenLHS-Core_0000062 xml:lang="en">A request requesting the execution of some health procedure.</obo:OpenLHS-Core_0000062>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health procedure request</rdfs:label>
     </owl:Class>
     
@@ -2204,7 +2258,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity containing information about some health procedure requests and possibly the associated health procedures.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health procedure report</rdfs:label>
     </owl:Class>
     
@@ -2242,7 +2296,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:OpenLHS-Core_0000061 xml:lang="en">A planned process that has some components that are planned processes, including at least one that is a health activity.</obo:OpenLHS-Core_0000061>
         <obo:OpenLHS-Core_0000062 xml:lang="en">- A planned process that is maximally directed by a health procedure specification.
 - A planned process that is guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury.</obo:OpenLHS-Core_0000062>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health procedure</rdfs:label>
     </owl:Class>
     
@@ -2254,7 +2308,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 xml:lang="en">A planned process that aims to produce a truthful statement about the health status of an organism or modify it.</obo:IAO_0000115>
         <obo:OpenLHS-Core_0000061 xml:lang="en">A planned process that aims to produce a truthful statement about the health status of an organism or modify it.</obo:OpenLHS-Core_0000061>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health activity</rdfs:label>
     </owl:Class>
     
@@ -2271,7 +2325,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health procedure resulting process</rdfs:label>
     </owl:Class>
     
@@ -2288,7 +2342,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health procedure outcome information</rdfs:label>
     </owl:Class>
     
@@ -2306,7 +2360,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is a specified output of a health activity.</obo:IAO_0000115>
         <obo:OpenLHS-Core_0000061 xml:lang="en">An information content entity that is a specified output of a health activity.</obo:OpenLHS-Core_0000061>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health activity outcome information</rdfs:label>
     </owl:Class>
     
@@ -2316,15 +2370,8 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000012"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An individual identifier that denotes a health provider.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health provider identifier</rdfs:label>
     </owl:Class>
     
@@ -2335,7 +2382,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000009"/>
         <obo:IAO_0000115 xml:lang="en">A health provider identifier that is used to denote a person authorised to act as a physician.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">physician identifier</rdfs:label>
     </owl:Class>
     
@@ -2354,7 +2401,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A role that inheres in an organism as a consequence of training in order to be able to participate as a performer in some health activities.</obo:IAO_0000115>
         <obo:IAO_0000600 xml:lang="en">This usually includes health professional like physicians, nurses or pharmacists etc.
 It could also includes non professionals like patient attendant but it would exclude others like secretaries or accountants.</obo:IAO_0000600>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health provider role</rdfs:label>
     </owl:Class>
     
@@ -2371,7 +2418,7 @@ It could also includes non professionals like patient attendant but it would exc
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An organism that is the bearer of a health provider role.</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">health provider</rdfs:label>
     </owl:Class>
     
@@ -2381,8 +2428,8 @@ It could also includes non professionals like patient attendant but it would exc
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <obo:IAO_0000115 xml:lang="en">A health procedure that include a diagnostic procedure - TBD.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">diagnostic health procedure</rdfs:label>
     </owl:Class>
     
@@ -2392,8 +2439,8 @@ It could also includes non professionals like patient attendant but it would exc
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000004"/>
-        <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/HEPRO#HEPRO-H"/>
+        <obo:IAO_0000115 xml:lang="en">A health procedure that includes a surgical procedure - TBD.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">surgical health procedure</rdfs:label>
     </owl:Class>
     
@@ -2613,6 +2660,281 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Connor, John, born on 28/2/1985
+
+Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human.</obo:OpenLHS-Core_0000061>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">human birth statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000001"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000011"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A state sanctioned human birth statement.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A state sanctioned human birth statement.</obo:OpenLHS-Core_0000061>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">civil birth record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">Reese, Kyle died in 1984</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A process temporally qualifying statement about the death of a human including an identifier and a temporal information of the death of this human.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A process temporally qualifying statement about the death of a human including an identifier and a temporal information of the death of this human.</obo:OpenLHS-Core_0000061>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">human death statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000003"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000011"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A state sanctioned human death statement.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000061 xml:lang="en">A state sanctioned human death statement.</obo:OpenLHS-Core_0000061>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">civil death record</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">human birth temporal information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A temporal information that is a component of a human death statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the death of this human.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A temporal information that is a component of a human death statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the death of this human.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">human death temporal information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that denotes the biological sex of an organism.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that denotes the biological sex of an organism.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">biological sex information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000012"/>
+        <obo:IAO_0000115 xml:lang="en">A biological sex information content entity that denotes the biological sex of a human.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A biological sex information content entity that denotes the biological sex of a human.</obo:OpenLHS-Core_0000062>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">human biological sex information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that denotes a biological sex or a gender identity of a human.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that denotes a biological sex or a gender identity of a human.</obo:OpenLHS-Core_0000062>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">human biological sex or gender identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000013">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">&apos;Goose&apos; (the name of a cat)</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes a particular organism.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An identifier that denotes a particular organism.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">organism identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000014">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IOIO_0000013"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An organism identifier that denotes a particular human.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An organism identifier that denotes a particular human.</obo:OpenLHS-Core_0000062>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">human identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A statement stating the biological sex of a human.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A statement stating the biological sex of a human.</obo:OpenLHS-Core_0000062>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">human biological sex statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000111>Eukaryota</obo:IAO_0000111>
+        <obo:IAO_0000118>eucaryotes</obo:IAO_0000118>
+        <obo:IAO_0000118>eukaryotes</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Eukaryota</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000111>Homo sapiens</obo:IAO_0000111>
+        <obo:IAO_0000118>human</obo:IAO_0000118>
+        <obo:IAO_0000118>human being</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label>Homo sapiens</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
@@ -2657,6 +2979,67 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">organization</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
+
+1) there are organization_member_roles (president, treasurer, branch
+editor), with individual persons as bearers
+
+2) there are organization_roles (employer, owner, vendor, patent holder)
+
+3) an organization has a charter / rules / bylaws, which specify what roles
+there are, how they should be realized, and how to modify the
+charter/rules/bylaws themselves.
+
+It is debatable what the organization itself is (some kind of dependent
+continuant or an aggregate of people). This also determines who/what the
+bearer of organization_roles&apos; are. My personal favorite is still to define
+organization as a kind of &apos;legal entity&apos;, but thinking it through leads to
+all kinds of questions that are clearly outside the scope of OBI.
+
+Interestingly enough, it does not seem to matter much where we place
+organization itself, as long as we can subclass it (University, Corporation,
+Government Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO,
+W3C, University of Oklahoma), and have it play roles.
+
+This leads to my proposal: We define organization through the statements 1 -
+3 above, but without an &apos;is a&apos; statement for now. We can leave it in its
+current place in the is_a hierarchy (material entity) or move it up to
+&apos;continuant&apos;. We leave further clarifications to BFO, and close this issue
+for now.</obo:IAO_0000116>
+        <obo:IAO_0000117>PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Susanna Sansone</obo:IAO_0000117>
+        <obo:IAO_0000119>GROUP: OBI</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:IAO_0000111 xml:lang="en">plan</obo:IAO_0000111>
+        <obo:IAO_0000112>The plan of researcher X to perform an experiment according to a protocol.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a planned process.</obo:IAO_0000115>
+        <obo:IAO_0000116>This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the &apos;plan specification&apos;, and &apos;planned process&apos; class, as we want to avoid to get deep into discussions of &apos;intend&apos; etc.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">AR, BP, JM, MC, PRS</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">branch derived</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">plan</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
@@ -2675,6 +3058,67 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
         <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000043"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">pragmatically accepted statement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000010"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedTarget xml:lang="en">A statement for which there is at least one contributor such that if it/he acts upon it, it/he will treat it as true.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">Note that the contributor does not need to believe in the truth of the statement to be disposed to act as if it was true.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/has_agent"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">A date of birth recorded in the French civil registrar.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A pragmatically accepted statement authored by a governement or a related organization such that if this organization acts upon it, it will treat it as true.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A pragmatically accepted statement authored by a governement or a related organization such that if this organization acts upon it, it will treat it as true.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">government sanctioned statement</rdfs:label>
     </owl:Class>
     
 
@@ -2700,6 +3144,171 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <owl:annotatedTarget xml:lang="en">It is an open question whether the mereological sum of a request with any other ICE is also a request</owl:annotatedTarget>
         <obo:IAO_0000116 xml:lang="en">hence the definitional necessary condition.</obo:IAO_0000116>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A statement that states that an entity existed, exists or will exist at some point during a specified temporal region.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A statement that states that an entity existed, exists or will exist at some point during a specified temporal region.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">temporally qualifying statement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000030"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000062"/>
+        <owl:annotatedTarget xml:lang="en">A statement that states that an entity existed, exists or will exist at some point during a specified temporal region.</owl:annotatedTarget>
+        <rdfs:comment xml:lang="en">More formally, this amount to states that a temporal region overlaps (in the sense of Allen&apos;s temporal relations) with a temporal region during which some entity exists.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A temporally qualifying statement stating that a temporal region overlaps with a temporal region during which some process occurred, occurs or will occur.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A temporally qualifying statement stating that a temporal region overlaps with a temporal region during which some process occurred, occurs or will occur.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">process temporally qualifying statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000260"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A plan of an agent to act as if some statement was true.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">A plan of an agent to act as if some statement was true.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">agent plan to act as if some statement was true</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000065">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that denotes a one-dimension temporal region.</obo:IAO_0000115>
+        <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that denotes a one-dimension temporal region.</obo:OpenLHS-Core_0000062>
+        <rdfs:label xml:lang="en">temporal information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112>The following is derived from https://en.wikipedia.org/wiki/Statement_(logic):
+
+Examples of sentences that are (or make) statements:
+&quot;Socrates is a man.&quot;
+&quot;A triangle has three sides.&quot;
+&quot;Madrid is the capital of Spain.&quot;
+&quot;There are five ducks on the lake&quot;
+&quot;The BRAF V600E mutation causes breast cancer&quot;
+
+Examples of sentences that are not (or do not make) statements:
+&quot;Who are you?&quot;
+&quot;Run!&quot;
+&quot;Greenness perambulates.&quot;
+&quot;I had one grunch but the eggplant over there.&quot;
+&quot;The King of France is wise.&quot;
+&quot;Broccoli tastes good.&quot;
+
+The first two examples are not declarative sentences and therefore are not (or do not make) statements. The third and fourth are declarative sentences but, lacking meaning, are neither true nor false and therefore are not (or do not make) statements. The fifth and sixth examples are meaningful declarative sentences, but are not statements but rather matters of opinion or taste.</obo:IAO_0000112>
+        <obo:IAO_0000115>An information content entity expressing a declarative sentence that is either true or false.</obo:IAO_0000115>
+        <rdfs:comment>From https://en.wikipedia.org/wiki/Statement_(logic) (2017-06-21):
+&quot;A statement is a declarative sentence that bears truth value, in that it can be either true or false. This definition derives from the domain of logic, where a statement is either (a) a meaningful declarative sentence that is either true or false, or (b) that which a true or false declarative sentence asserts. In the latter case, a statement is distinct from a sentence in that a sentence is only one formulation of a statement, whereas there may be many other formulations expressing the same statement . . . In (this treatment), &quot;statement&quot; is introduced in order to distinguish a sentence from its informational content. A statement is regarded as the information content of an information-bearing sentence. Thus, a sentence is related to the statement it bears like a numeral to the number it refers to. Statements are abstract logical entities, while sentences are grammatical entities.&quot;
+----
+Note that the definition in (b) describes something closer to the notion of a &apos;Proposition&apos; as defined in SEPIO?</rdfs:comment>
+        <rdfs:comment>Statements are sentences (or, more precisely, the information content of sentences) that declare a definitive or proposed fact - expressing something about the world or one&apos;s experience of it that may or may not be true. The identity of a particular Statement is dependent upon (1) what it reports as true (its semantic content), (2) the Agent stating it, and (3) the occasion on which the statement is made. 
+
+The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos;statement&apos; as it has no truth value. By contrast, the phrase &quot;the pink elephant is in the room&quot; is a statement as this can be evaluated for its truth.</rdfs:comment>
+        <rdfs:label xml:lang="en">statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologyrepository.com/CommonCoreOntologies/Agent -->
+
+    <owl:Class rdf:about="http://www.ontologyrepository.com/CommonCoreOntologies/Agent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/agent_in"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A Material Entity that is capable of performing Planned Acts</obo:IAO_0000115>
+        <CommonCoreOntologies:is_curated_in_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology</CommonCoreOntologies:is_curated_in_ontology>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
     
 
 

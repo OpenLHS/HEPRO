@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/HEPRO/imports/IOIO_import.owl>
-<http://purl.obolibrary.org/obo/HEPRO/releases/2023-10-17/imports/IOIO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/IOIO/releases/2023-10-17/IOIO.owl>)
-Annotation(owl:versionInfo "2023-10-17")
+<http://purl.obolibrary.org/obo/HEPRO/releases/2023-10-20/imports/IOIO_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/IOIO/releases/2023-10-19/IOIO.owl>)
+Annotation(owl:versionInfo "2023-10-20")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -247,7 +247,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_anno
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_gp2term>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_go_ontology>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/valid_for_gocam>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IOIO#IOIO-H>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ro/subsets#ro-eco>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
@@ -394,11 +394,11 @@ SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/valid_for_go_ontology> <
 
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/valid_for_gocam> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IOIO#IOIO-H> (IOIO-H)
+# Annotation Property: <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H> (OpenLHS-H)
 
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IOIO#IOIO-H> "IOIO classes relevent to humans."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO#IOIO-H> "IOIO-H"@en)
-SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/IOIO#IOIO-H> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H> "OpenLHS classes relevant to humans."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H> "OpenLHS-H"@en)
+SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/ro/subsets#ro-eco> (<http://purl.obolibrary.org/obo/ro/subsets#ro-eco>)
 
@@ -2099,7 +2099,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000646> "Mathias Brochhausen"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000646> "postal code"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000646> <http://purl.obolibrary.org/obo/IAO_0020000>)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000646> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000054>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0020000> (identifier)
 
@@ -2169,7 +2168,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000001> "A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/IOIO_0000001> "A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000001> <http://purl.obolibrary.org/obo/IOIO#IOIO-H>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000001> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000001> "human birth statement"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000001> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/IOIO_0000005>))
@@ -2179,7 +2178,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000001> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000002> "A state sanctioned human birth statement."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/IOIO_0000002> "A state sanctioned human birth statement."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000002> <http://purl.obolibrary.org/obo/IOIO#IOIO-H>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000002> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000002> "civil birth record"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/IOIO_0000002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IOIO_0000001> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000011>))
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000002> <http://purl.obolibrary.org/obo/IOIO_0000001>)
@@ -2190,7 +2189,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000002> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IOIO_0000003> "Reese, Kyle died in 1984"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000003> "A process temporally qualifying statement about the death of a human including an identifier and a temporal information of the death of this human."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/IOIO_0000003> "A process temporally qualifying statement about the death of a human including an identifier and a temporal information of the death of this human."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000003> <http://purl.obolibrary.org/obo/IOIO#IOIO-H>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000003> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000003> "human death statement"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000003> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000003> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/IOIO_0000006>))
@@ -2200,7 +2199,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000003> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000004> "A state sanctioned human death statement."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/IOIO_0000004> "A state sanctioned human death statement."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000004> <http://purl.obolibrary.org/obo/IOIO#IOIO-H>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000004> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000004> "civil death record"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/IOIO_0000004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IOIO_0000003> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000011>))
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000004> <http://purl.obolibrary.org/obo/IOIO_0000003>)
@@ -2233,17 +2232,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000010> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000011> "A biological sex information content entity that denotes the biological sex of a human."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/IOIO_0000011> "A biological sex information content entity that denotes the biological sex of a human."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000011> <http://purl.obolibrary.org/obo/IOIO#IOIO-H>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000011> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000011> "human biological sex information content entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000011> <http://purl.obolibrary.org/obo/IOIO_0000010>)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000011> <http://purl.obolibrary.org/obo/IOIO_0000012>)
-SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000011> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000054>)
 
 # Class: <http://purl.obolibrary.org/obo/IOIO_0000012> (human biological sex or gender identity information content entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000012> "An information content entity that denotes a biological sex or a gender identity of a human."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/IOIO_0000012> "An information content entity that denotes a biological sex or a gender identity of a human."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000012> <http://purl.obolibrary.org/obo/IOIO#IOIO-H>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000012> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000012> "human biological sex or gender identity information content entity"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/IOIO_0000012> ObjectUnionOf(<http://purl.obolibrary.org/obo/IOIO_0000011> <http://purl.obolibrary.org/obo/OMRSE_00000209>))
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000012> <http://purl.obolibrary.org/obo/IAO_0000030>)
@@ -2262,7 +2260,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000013> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000014> "An organism identifier that denotes a particular human."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/IOIO_0000014> "An organism identifier that denotes a particular human."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000014> <http://purl.obolibrary.org/obo/IOIO#IOIO-H>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000014> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000014> "human identifier"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/IOIO_0000014> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IOIO_0000013> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/NCBITaxon_9606>)))
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000014> <http://purl.obolibrary.org/obo/IOIO_0000013>)
@@ -2272,7 +2270,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000014> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IOIO_0000015> "A statement stating the biological sex of a human."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/IOIO_0000015> "A statement stating the biological sex of a human."@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000015> <http://purl.obolibrary.org/obo/IOIO#IOIO-H>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000015> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IOIO_0000015> "human biological sex statement"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000015> <http://purl.obolibrary.org/obo/SEPIO_0000174>)
 SubClassOf(<http://purl.obolibrary.org/obo/IOIO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/IOIO_0000011>))
@@ -2329,6 +2327,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "human")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "human being")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/ncbitaxon.owl>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
 SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
 
@@ -2672,7 +2671,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000023> "An identifier that denotes a geographical region on which is based the first three characters of a Canadian postal code."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000023> "canadian forward sorting area code"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000023> <http://purl.obolibrary.org/obo/IAO_0020000>)
-SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000023> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000054>)
 
 # Class: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000024> (postal address city)
 
@@ -2826,7 +2824,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000053> <http://purl.ob
 # Class: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000054> (specified value)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000054> "4 Km"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000054> "An information content entity whose structure and content are specified and includes a litteral value."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000061> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000054> "An information content entity whose structure and content follow a template."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000054> "specified value"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000054> <http://purl.obolibrary.org/obo/IAO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000054> DataExactCardinality(1 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000059>))
@@ -2865,7 +2863,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000
 EquivalentClasses(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000065> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/BFO_0000008>)))
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000065> <http://purl.obolibrary.org/obo/IAO_0000030>)
 SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000065> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000219> <http://purl.obolibrary.org/obo/BFO_0000008>))
-SubClassOf(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000065> DataExactCardinality(1 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000073>))
 
 # Class: <http://purl.obolibrary.org/obo/SEPIO_0000174> (statement)
 
