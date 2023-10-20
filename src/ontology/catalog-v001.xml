@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-10-17/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-10-11/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-27/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-05/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-07-04/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-22/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-20/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-19/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/HEPRO/releases/2023-06-05/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-        <uri name="http://purl.obolibrary.org/obo/HEPRO/imports/NOYO_import.owl" uri="imports/NOYO_import.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/HEPRO/imports/NOYO_import.obo" uri="imports/NOYO_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/HEPRO/imports/IOIO_import.owl" uri="imports/IOIO_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/HEPRO/imports/IOIO_import.obo" uri="imports/IOIO_import.obo"/>
     </group>
 </catalog>
