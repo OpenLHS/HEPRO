@@ -1,0 +1,35 @@
+IRI,value,def
+HEPRO_0000001,health procedure request,A request requesting the execution of some health procedure.
+HEPRO_0000003,health procedure report,An information content entity containing information about some health procedure requests and possibly the associated health procedures.
+HEPRO_0000004,health procedure,"- A planned process that is maximally directed by a health procedure specification.
+- A planned process that is guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury."
+HEPRO_0000005,health activity,A planned process that aims to produce a truthful statement about the health status of an organism or modify it.
+HEPRO_0000006,health procedure resulting process,"A planned process that is a part of a health procedure, that has as specified input at least one health activity outcome information and aim at generating a health procedure outcome information."
+HEPRO_0000007,health procedure outcome information,An information content entity that is the output of a health procedure resulting process and that describes some outcomes of a health procedure.
+HEPRO_0000008,health activity outcome information,An information content entity that is a specified output of a health activity.
+HEPRO_0000009,health provider identifier,An individual identifier that denotes a health provider.
+HEPRO_0000010,physician identifier,A health provider identifier that is used to denote a person authorised to act as a physician.
+HEPRO_0000011,health provider role,A role that inheres in an organism as a consequence of training in order to be able to participate as a performer in some health activities.
+HEPRO_0000012,health provider,An organism that is the bearer of a health provider role.
+HEPRO_0000013,diagnostic health procedure,A health procedure that include a diagnostic procedure - TBD.
+HEPRO_0000014,surgical health procedure,A health procedure that includes a surgical procedure - TBD.
+HEPRO_0000015,health procedure sub-group name,An information content entity that is about a sub-group of health procedures.
+HEPRO_0000016,health activity sub-group name,An information content entity that is about a sub-group of health activities.
+HEPRO_0000017,pathological condition sub-group name,An information content entity that is about a sub-group of pathological conditions.
+HEPRO_0000020,health procedure beginning statement,A process beginning statement that temporally qualifies the beginning of a health procedure.
+HEPRO_0000021,health procedure ending statement,A process ending statement that temporally qualifies the end of a health procedure.
+HEPRO_0000022,health activity beginning statement,A process beginning statement that temporally qualifies the beginning of a health activity.
+HEPRO_0000023,health activity ending statement,A process ending statement that temporally qualifies the end of a health activity.
+HEPRO_0000025,health procedure agreement specification,A service agreement specification that aims to direct some health procedure.
+HEPRO_0000030,health procedure specification,A directive information entity that aims to direct a health procedure.
+HEPRO_0000100,health activity identifier,An identifier that denotes a health activity.
+HEPRO_0000101,health procedure identifier,An identifier that denotes a health procedure.
+HEPRO_0000102,health activity beginning temporal information,A temporal information that is a component of a health activity beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of the health activity.
+HEPRO_0000103,health procedure beginning temporal information,A temporal information that is a component of a health procedure beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of the health procedure.
+HEPRO_0000104,health activity ending temporal information,A temporal information that is a component of a health activity ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of the health activity.
+HEPRO_0000105,health procedure ending temporal information,A temporal information that is a component of a health procedure ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of the health procedure.
+HEPRO_0000125,pathological condition presence statement,A pragmatically accepted statement that states the presence of a pathological condition for an organism.
+HEPRO_0000127,pathological condition start temporally qualifying statement,"A temporally qualifying statement that qualifies the clinically identified appearance of a disorder or a disease, or the beginning of a pathological process."
+HEPRO_0000128,pathological condition end temporally qualifying statement,"A temporally qualifying statement that qualifies the clinically identified disappearance of a disorder or a disease, or the ending of a pathological process."
+HEPRO_0000129,pathological condition start temporal information,A temporal information that is a component of a pathological condition start temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified start of the pathological condition.
+HEPRO_0000130,pathological condition end temporal information,A temporal information that is a component of a pathological condition end temporallly qualifying statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the clinically identified end of the pathological condition.

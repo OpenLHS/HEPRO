@@ -11,7 +11,7 @@ bin/
 
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/reports/*
+#src/ontology/reports/*
 src/ontology/HEPRO.owl
 src/ontology/HEPRO.obo
 src/ontology/HEPRO.json

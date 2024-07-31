@@ -1,0 +1,7 @@
+Level	Rule Name	Subject	Property	Value
+WARN	missing_definition	description	IAO:0000115	
+WARN	missing_definition	license	IAO:0000115	
+WARN	missing_definition	title	IAO:0000115	
+WARN	missing_subset_declaration	obo:OpenLHS-Core#OpenLHS-H	rdfs:subPropertyOf	
+INFO	lowercase_definition	health procedure	IAO:0000115	"- A planned process that is maximally directed by a health procedure specification.
+- A planned process that is guided by the objective of contributing to a desired effect on the health status of an organism or several organisms achieved through the treatment, diagnosis, or prevention of disease or injury.@en"
