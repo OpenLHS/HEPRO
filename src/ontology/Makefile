@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                1fcf16dd5082922eba86b5970bc6c9cae0b30c6211657f48e8951e59d8e24475
+CONFIG_HASH=                36183c88ecbe7e8e0bf969675df36ebff358f3fd785557af9cfcd6a20aede3ba
 
 
 # ----------------------------------------
@@ -59,7 +59,7 @@ EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
 FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
-RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base )
+RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base $(ONT)-non-classified )
 
 ifeq ($(ODK_DEBUG),yes)
 ODK_DEBUG_FILE = debug.log
@@ -456,7 +456,7 @@ endif
 # Release artefacts: main release artefacts
 # ----------------------------------------
 
-$(ONT).owl: $(ONT)-full.owl
+$(ONT).owl: $(ONT)-non-classified.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -491,6 +491,10 @@ $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
+		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+# foo-non-classified: (edit->imports-merged)
+$(ONT)-non-classified.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 # ----------------------------------------
 # Debugging Tools
