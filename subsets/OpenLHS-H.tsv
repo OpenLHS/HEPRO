@@ -1,21 +1,13 @@
 ?x	?label
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid105	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid113	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid120	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid125	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid130	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid135	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid147	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid153	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid164	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid168	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid173	
-_:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid88	
+_:Bf5874c4cX2D4256X2D436aX2Da6e4X2Daaed9d86924dgenid101	
+_:Bf5874c4cX2D4256X2D436aX2Da6e4X2Daaed9d86924dgenid108	
+_:Bf5874c4cX2D4256X2D436aX2Da6e4X2Daaed9d86924dgenid120	
+_:Bf5874c4cX2D4256X2D436aX2Da6e4X2Daaed9d86924dgenid124	
+_:Bf5874c4cX2D4256X2D436aX2Da6e4X2Daaed9d86924dgenid81	
 <http://purl.obolibrary.org/obo/BFO_0000001>	"entity"
 <http://purl.obolibrary.org/obo/BFO_0000002>	"continuant"
 <http://purl.obolibrary.org/obo/BFO_0000003>	"occurrent"
 <http://purl.obolibrary.org/obo/BFO_0000004>	"independent continuant"
-<http://purl.obolibrary.org/obo/BFO_0000008>	"temporal region"
 <http://purl.obolibrary.org/obo/BFO_0000015>	"process"
 <http://purl.obolibrary.org/obo/BFO_0000017>	"realizable entity"
 <http://purl.obolibrary.org/obo/BFO_0000020>	"specifically dependent continuant"
@@ -36,13 +28,8 @@ _:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid88
 <http://purl.obolibrary.org/obo/HEPRO_0000013>	"diagnostic health procedure"
 <http://purl.obolibrary.org/obo/HEPRO_0000014>	"surgical health procedure"
 <http://purl.obolibrary.org/obo/HEPRO_0000030>	"health procedure specification"
-<http://purl.obolibrary.org/obo/IAO_0000005>	"objective specification"
-<http://purl.obolibrary.org/obo/IAO_0000007>	"action specification"
 <http://purl.obolibrary.org/obo/IAO_0000030>	"information content entity"
 <http://purl.obolibrary.org/obo/IAO_0000033>	"directive information entity"
-<http://purl.obolibrary.org/obo/IAO_0000104>	"plan specification"
-<http://purl.obolibrary.org/obo/IAO_0020000>	"identifier"
-<http://purl.obolibrary.org/obo/IAO_0020010>	"identifier creating process"
 <http://purl.obolibrary.org/obo/IOIO_0000001>	"human birth statement"
 <http://purl.obolibrary.org/obo/IOIO_0000002>	"civil birth record"
 <http://purl.obolibrary.org/obo/IOIO_0000003>	"human death statement"
@@ -58,11 +45,9 @@ _:B210bf8e5X2Dc1c1X2D4924X2D9f20X2D1d75385d70e6genid88
 <http://purl.obolibrary.org/obo/NCBITaxon_2759>	"Eukaryota"
 <http://purl.obolibrary.org/obo/NCBITaxon_9606>	"Homo sapiens"
 <http://purl.obolibrary.org/obo/OBI_0000011>	"planned process"
-<http://purl.obolibrary.org/obo/OBI_0000245>	"organization"
 <http://purl.obolibrary.org/obo/OBI_0000260>	"plan"
 <http://purl.obolibrary.org/obo/OBI_0100026>	"organism"
 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000010>	"pragmatically accepted statement"
-<http://purl.obolibrary.org/obo/OpenLHS-Core_0000011>	"government sanctioned statement"
 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000027>	"request"
 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000030>	"temporally qualifying statement"
 <http://purl.obolibrary.org/obo/OpenLHS-Core_0000031>	"process temporally qualifying statement"
