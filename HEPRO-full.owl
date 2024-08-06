@@ -19,7 +19,7 @@
      xmlns:OpenLHS-Core="http://purl.obolibrary.org/obo/OpenLHS-Core#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO/HEPRO-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2024-08-01/HEPRO-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2024-08-06/HEPRO-full.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">François Goyer</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
@@ -27,7 +27,7 @@
         <terms:description xml:lang="en">Ontology of health procedure related entities</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>HEalth PRocedure Ontology</terms:title>
-        <owl:versionInfo>2024-08-01</owl:versionInfo>
+        <owl:versionInfo>2024-08-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -242,6 +242,19 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000064">
         <obo:IAO_0000600 xml:lang="en">Human-readable necessary and sufficient membership conditions of a class or a property.</obo:IAO_0000600>
         <rdfs:label xml:lang="en">necessary and sufficient conditions</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000100 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000100">
+        <obo:IAO_0000115 xml:lang="en">An annotation property used to tag relevant classes for ontorel generation</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Three values for this annotation (WIP) :
+ - interest: means that the annotated class instances or associated data properties are of interest for a request.
+ - joint: means that the annotated clas or property is necessary for a jointure in the request.
+ - pivot: means that the annotated class is the pivot of the request.</rdfs:comment>
+        <rdfs:label xml:lang="en">ontorel specification</rdfs:label>
     </owl:AnnotationProperty>
     
 
