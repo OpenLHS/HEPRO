@@ -16,6 +16,8 @@ HEPRO_0000014,surgical health procedure,A health procedure that includes a surgi
 HEPRO_0000015,health procedure sub-group name,An information content entity that is about a sub-group of health procedures.
 HEPRO_0000016,health activity sub-group name,An information content entity that is about a sub-group of health activities.
 HEPRO_0000017,pathological condition sub-group name,An information content entity that is about a sub-group of pathological conditions.
+HEPRO_0000018,free-text pathological condition sub-group name,A pathological condition sub-group name that is recorded in free-text.
+HEPRO_0000019,structured pathological condition sub-group name,A pathological condition sub-group name that is recorded in a structured manner.
 HEPRO_0000020,health procedure beginning statement,A process beginning statement that temporally qualifies the beginning of a health procedure.
 HEPRO_0000021,health procedure ending statement,A process ending statement that temporally qualifies the end of a health procedure.
 HEPRO_0000022,health activity beginning statement,A process beginning statement that temporally qualifies the beginning of a health activity.
