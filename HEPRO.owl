@@ -19,7 +19,7 @@
      xmlns:OpenLHS-Core="http://purl.obolibrary.org/obo/OpenLHS-Core#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/HEPRO.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2025-08-14/HEPRO.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/HEPRO/releases/2025-09-05/HEPRO.owl"/>
         <dc:contributor xml:lang="en">Adrien Barton</dc:contributor>
         <dc:contributor xml:lang="en">François Goyer</dc:contributor>
         <dc:contributor xml:lang="en">Jean-François Ethier</dc:contributor>
@@ -27,7 +27,7 @@
         <terms:description xml:lang="en">Ontology of health procedure related entities</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>HEalth PRocedure Ontology</terms:title>
-        <owl:versionInfo>2025-08-14</owl:versionInfo>
+        <owl:versionInfo>2025-09-05</owl:versionInfo>
     </owl:Ontology>
     
 
